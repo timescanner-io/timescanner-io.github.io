@@ -14,5 +14,7 @@ COPY . .
 RUN bundle install
 RUN npm install --save-dev
 
+RUN npm run watch:css
+
 # Command to run when the container starts
 CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--livereload"]
