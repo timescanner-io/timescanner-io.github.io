@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Site web de TimeScanner",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/build.css --minify",
-    "watch:css": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/build.css --watch",
+    "build:css": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/build.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/build.css --watch",
     "build": "npm run build:css && jekyll build",
     "serve": "npm run watch:css & jekyll serve"
   },
