@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="{{ site.active_lang }}">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ site.full_name }} | {{ page.title }}</title>
+        
+        <meta name="description" content="{{ site.description }}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta property="og:locale" content="{{ site.active_lang }}" />
+        <meta property="og:title" content="{{ site.full_name }} | {{ page.title }}" />
+        <meta property="og:description" content="{{ site.description }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ page.url }}" />
+        <meta property="og:image" content="" />
+        <meta property="og:site_name" content="{{ site.title }}" />
+        
+        {% include assets.html %}
+    </head>
+
+    <body class="min-h-screen bg-gray-50">
+        <div class="flex flex-col min-h-screen">
+            {% include navbar.html %}
+
+            <main>
+                {{ content }}
+            </main>
+
+            {% include footer.html %}
+        </div>
+
+        <script>
+            lucide.createIcons();
+        </script>
+    </body>
+</html>

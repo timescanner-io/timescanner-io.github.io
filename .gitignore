@@ -1,0 +1,12 @@
+# OS generated files
+.DS_Store
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+node_modules/
+
+# Logs
+*.log

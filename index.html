@@ -1,0 +1,262 @@
+---
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: site.data.i18n.hero.title[site.active_lang]
+permalink: /
+---
+
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]"></div>
+    
+    <!-- Image de fond -->
+    <div class="absolute inset-0 opacity-10">
+        <img src="/assets/images/calendar.png" alt="" class="absolute right-0 top-1/2 -translate-y-1/2 h-[80vh] object-contain">
+    </div>
+    
+    <div class="container mx-auto px-4 py-20 md:py-32 relative">
+        <div class="max-w-2xl">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                {{ site.data.i18n.hero.title[site.active_lang] }} <span class="text-primary-200">{{ site.data.i18n.hero.title_highlight[site.active_lang] }}</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl mb-8 text-primary-100">
+                {{ site.data.i18n.hero.subtitle[site.active_lang] }}
+            </p>
+            
+            <div class="flex">
+                <a href="{{ site.webapp_url }}" class="inline-flex items-center px-8 py-4 rounded-lg bg-white text-primary-600 font-semibold hover:bg-primary-50 transition-colors duration-200">
+                    {{ site.data.i18n.hero.cta[site.active_lang] }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Méthode Section -->
+<div class="w-full bg-white">
+    <section>
+        <div class="container mx-auto px-4 py-20">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    {{ site.data.i18n.method.title[site.active_lang] }}
+                </h2>
+                
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    {{ site.data.i18n.method.intro[site.active_lang] }}
+                    <br><br>
+
+                    {{ site.data.i18n.method.format_intro[site.active_lang] }}
+                    <br><br>
+                    
+                    <div class="relative max-w-2xl mx-auto">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
+                        <div class="relative bg-white rounded-lg p-4 border border-gray-200 shadow-lg">
+                            <div class="flex items-start">
+                                <div class="w-2 h-full bg-primary-500 rounded-full mr-4 mt-1"></div>
+                                <div class="flex-1 text-left">
+                                    <code class="text-gray-800 font-mono text-lg block mb-1">
+                                        <span class="text-primary-600">[</span>Nom du client<span class="text-primary-600">]</span>
+                                        <span class="text-gray-600">(</span><span class="text-primary-600">[</span>Nom du projet<span class="text-primary-600">]</span><span class="text-gray-600">)</span>
+                                        <span class="text-gray-600">Titre de votre évènement</span>
+                                    </code>
+                                    <div class="text-sm text-gray-500">10:00 - 11:00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
+                <img src="/assets/images/calendar.png" alt="Interface de Timescanner" class="relative rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Avantages Section -->
+<div class="w-full bg-gray-50">
+    <section>
+        <div class="container mx-auto px-4 py-20">
+            <div class="space-y-24">
+                <!-- Maximisez votre rentabilité -->
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                            Maximisez votre rentabilité
+                        </h3>
+                    
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Un suivi fiable du temps, ce sont <strong>des devis plus justes</strong>, <strong>des marges maîtrisées</strong> et une <strong>meilleure rentabilité</strong>. 
+                            <br><br>
+                            Timescanner vous donne une vision claire de votre travail, pour <strong>prendre des décisions éclairées</strong> et <strong>pérenniser votre activité</strong>.
+                        </p>
+                    </div>
+                    
+                    <div class="w-full md:w-1/2">
+                        <img src="/assets/images/calendar.png" alt="Maximisez votre rentabilité" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+
+                <!-- Suivre votre temps -->
+                <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/2">
+                        <img src="/assets/images/calendar.png" alt="Suivre votre temps" class="rounded-lg shadow-lg">
+                    </div>
+                    
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                            Suivre votre temps vous coûte trop de temps
+                        </h3>
+                        
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            En tant que freelance, <strong>chaque minute non facturée est une perte sèche</strong>. 
+                            <br><br>
+                            Pourtant, les outils de time tracking traditionnels vous imposent de jongler avec un chrono et de tout ressaisir manuellement. 
+                            <br><br>
+                            <strong>Résultat ? Vous perdez du temps... pour le suivre.</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Votre calendrier -->
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                            Votre calendrier devient votre time tracker
+                        </h3>
+                        
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Plutôt que d'ajouter un nouvel outil, <strong>Timescanner transforme votre calendrier en un outil de suivi</strong>. 
+                            <br><br>
+                            Il analyse vos événements et génère automatiquement votre récapitulatif de temps. 
+                            <br><br>
+                            <strong>Zéro. Effort. Supplémentaire</strong>.
+                        </p>
+                    </div>
+                    
+                    <div class="w-full md:w-1/2">
+                        <img src="/assets/images/calendar.png" alt="Votre calendrier" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+
+                <!-- Méthode éprouvée -->
+                <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/2">
+                        <img src="/assets/images/calendar.png" alt="Méthode éprouvée" class="rounded-lg shadow-lg">
+                    </div>
+                    
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                            Une méthode éprouvée par les meilleurs
+                        </h3>
+                        
+                        <p class="text-gray-600 leading-relaxed text-lg">
+                            Les CEOs les plus productifs utilisent déjà cette approche : <strong>tout passe par leur calendrier</strong>. 
+                            <br><br>
+                            En adoptant le <strong>réflexe calendrier</strong>, vous structurez votre temps, évitez les oublis et simplifiez votre gestion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Fonctionnalités Section -->
+<div class="w-full bg-white">
+    <section>
+        <div class="container mx-auto px-4 py-20">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="line-chart" class="w-6 h-6 text-primary-600"></i>
+                    </div>
+                    
+                    <h4 class="text-xl font-semibold mb-4">
+                        Calcul des temps de travail et du Chiffre d'Affaires
+                    </h4>
+                    
+                    <p class="text-gray-600">
+                        Analysez le temps passé pour chaque client, sur chacun de ses projets. Renseignez vos informations de facturation pour obtenir les factures à préparer.
+                        <br><br>
+                        <strong>Transformez du temps perdu en temps facturable et gagnez plus d'argent.</strong>
+                    </p>
+                </div>
+
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="calendar-check" class="w-6 h-6 text-primary-600"></i>
+                    </div>
+                    
+                    <h4 class="text-xl font-semibold mb-4">
+                        Prévision de Chiffre d'Affaires en fin de mois
+                    </h4>
+                    
+                    <p class="text-gray-600">
+                        Organiser votre calendrier avec des évènements récurrents pour vos clients permet de prévoir dès le début du mois, votre CA en fin de mois. 
+                        <br><br>
+                        <strong>À vous de décider si vous devez travailler ou vous reposer.</strong>
+                    </p>
+                </div>
+
+                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="file-text" class="w-6 h-6 text-primary-600"></i>
+                    </div>
+                    
+                    <h4 class="text-xl font-semibold mb-4">Génération automatique de Compte-Rendu d'Activité</h4>
+                    
+                    <p class="text-gray-600">
+                        Vos évènements fournissent des informations sur votre activité pour générer pour vous, un Compte-Rendu mensuel à envoyer à vos clients.
+                        <br><br>
+                        <strong>Ne perdez plus de temps à faire du reporting.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Calendars As A Database Section -->
+<div class="w-full bg-gray-50">
+    <section>
+        <div class="container mx-auto px-4 py-20">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Calendars As A Database
+                </h2>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Timescanner calcule les temps de travail en temps réel, directement depuis votre calendrier. Nous n'enregistrons rien en base de données. Désactiver votre calendrier ou changer la durée d'un évènement aura donc un impact immédiat. 
+                    
+                    <br><br>
+
+                    Votre calendrier <strong>EST</strong> la base de données. <strong>Vos évènements restent confidentiels.</strong>
+                </p>
+            </div>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
+                <img src="/assets/images/calendar.png" alt="Calendars As A Database" class="relative rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- CTA Section -->
+<section class="relative bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]"></div>
+    <div class="container mx-auto px-4 py-20 relative text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Prêt à gagner du temps sur votre Time Tracking ?
+        </h2>
+        <div class="flex justify-center">
+            <a href="{{ site.webapp_url }}" class="inline-flex items-center px-8 py-4 rounded-lg bg-white text-primary-600 font-semibold hover:bg-primary-50 transition-colors duration-200">
+                Je m'inscris
+            </a>
+        </div>
+    </div>
+</section>

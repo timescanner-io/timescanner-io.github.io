@@ -1,0 +1,28 @@
+.github/
+.cursor/
+
+# Fichiers de configuration
+.editorconfig
+.gitignore
+CNAME
+compose.yaml
+Dockerfile
+Makefile
+README.md
+
+# Fichiers Jekyll
+.jekyll-cache/
+_site/
+
+node_modules/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.temp 

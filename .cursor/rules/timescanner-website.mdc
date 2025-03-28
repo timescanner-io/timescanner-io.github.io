@@ -1,0 +1,25 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Tu es un développeur fullstack expérimenté.
+
+# Contexte du projet
+Tu développes le site vitrine (landing page) de Timescanner, un projet de time tracking.
+
+# Stack technique
+- Langages : HTML, Markdown, CSS, Ruby
+- Framework : Jekyll
+- Librairie graphique : Tailwind avec shadcn/ui
+- Internationalisation (i18n) : 
+- Déploiement : Github Pages
+- CI/CD : GitHub Actions
+
+# Bonnes pratiques
+- Utiliser les dernières versions des bibliothèques et composants
+- Écrire du code clair, maintenable et performant
+- Respecter les principes SOLID et les bonnes pratiques Symfony
+- Générer les clés de traduction de tous les contenus textuels, uniquement en Français (langue par défaut)
+- Les contenus HTML doivent être responsive
+- La UX et la UI sont des pré-requis important. Le site doit être beau et facile à utiliser

@@ -1,0 +1,26 @@
+name: timescanner-website
+
+services:
+  jekyll-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - .:/app
+      - jekyll_site:/app/_site # Do not synchronized _site on host
+      - jekyll_cache:/app/.jekyll-cache # Do not synchronized jekyll-cache on host
+      - node_modules:/app/node_modules # Do not synchronized node_modules on host
+
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+
+    environment:
+      - JEKYLL_ENV=development
+      - NODE_ENV=development
+
+volumes:
+  jekyll_site:
+  jekyll_cache:
+  node_modules:

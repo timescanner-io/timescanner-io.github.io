@@ -1,0 +1,33 @@
+<footer class="bg-white border-t border-gray-200">
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Logo et Copyright -->
+            <div class="flex flex-col justify-between">
+                <div class="mb-2">
+                    <a href="/" class="text-2xl font-bold text-primary-600">
+                        {{ site.title }}
+                    </a>
+                </div>
+
+                <div class="text-sm text-gray-500">
+                    © {{ site.time | date: '%Y' }} {{ site.title }}. {{ site.data.i18n.footer.copyright[site.active_lang] }}.
+                </div>
+            </div>
+
+            <!-- Liens -->
+            <div class="flex flex-col md:flex-row justify-end space-y-4 md:space-y-0 md:space-x-8">
+                <a href="/legal-notice" class="text-sm text-gray-600 hover:text-primary-600 transition-colors duration-200">
+                    {{ site.data.i18n.footer.legal[site.active_lang] }}
+                </a>
+
+                <a href="/term-of-services" class="text-sm text-gray-600 hover:text-primary-600 transition-colors duration-200">
+                    {{ site.data.i18n.footer.terms[site.active_lang] }}
+                </a>
+                
+                <a href="/privacy" class="text-sm text-gray-600 hover:text-primary-600 transition-colors duration-200">
+                    {{ site.data.i18n.footer.privacy[site.active_lang] }}
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
