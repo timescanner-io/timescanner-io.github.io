@@ -49,7 +49,7 @@ jobs:
           node-version: '20'
 
       - name: Install javascript dependencies
-        run: npm install
+        run: npm install --save-dev
         env:
           NODE_ENV: development
 
