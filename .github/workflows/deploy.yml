@@ -51,12 +51,12 @@ jobs:
       - name: Install javascript dependencies
         run: npm install --save-dev
         env:
-          NODE_ENV: development
+          NODE_ENV: production
 
       - name: Build css dependencies
         run: npm run build:css
         env:
-          NODE_ENV: development
+          NODE_ENV: production
 
       - name: Setup Pages
         id: pages
