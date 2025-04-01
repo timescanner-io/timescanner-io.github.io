@@ -67,14 +67,17 @@ exclude_from_localizations: ["assets"]
 lang_from_path: true
 parallel_localization: false
 
+sass:
+    sourcemap: never
+
 # ########################### #
 # ##### Jekyll Tailwind ##### #
 # ########################### #
 
 tailwind:
   config: /config/tailwind.config.js
-  input: /assets/css/main.css
-  output: /_site/assets/css/build.css
+  input: assets/css/main.css
+  output: _site/assets/css/build.css
   postcss: /config/postcss.config.js
   minify: true
 

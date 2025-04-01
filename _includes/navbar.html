@@ -10,11 +10,15 @@
             <div class="hidden md:block">
                 <div class="flex items-center space-x-8">
                     <a href="/pricing" class="text-gray-600 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
-                        {{ site.data.i18n.nav.pricing[site.active_lang] }}
+                        {{ site.data[site.active_lang].layout.nav.pricing }}
                     </a>
                     
+                    <a href="/examples" class="text-gray-600 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                        {{ site.data[site.active_lang].layout.nav.examples}}
+                    </a>
+
                     <a href="{{ site.webapp_url }}" class="text-gray-600 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
-                        {{ site.data.i18n.nav.login[site.active_lang] }}
+                        {{ site.data[site.active_lang].layout.nav.login }}
                     </a>
                 </div>
             </div>

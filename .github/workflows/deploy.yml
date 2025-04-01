@@ -42,21 +42,6 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
           cache-version: 0
-    
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: Install javascript dependencies
-        run: npm install --save-dev
-        env:
-          NODE_ENV: production
-
-      - name: Build css dependencies
-        run: npm run build:css
-        env:
-          NODE_ENV: production
 
       - name: Setup Pages
         id: pages

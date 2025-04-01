@@ -18,16 +18,16 @@ permalink: /
     <div class="container mx-auto px-4 py-20 md:py-32 relative">
         <div class="max-w-2xl">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                {{ site.data.home.hero.title }} <span class="text-primary-200">{{ site.data.home.hero.title_highlight }}</span>
+                {{ site.data[site.active_lang].home.hero.title }} <span class="text-primary-200">{{ site.data[site.active_lang].home.hero.title_highlight }}</span>
             </h1>
             
             <p class="text-xl md:text-2xl mb-8 text-primary-100">
-                {{ site.data.home.hero.subtitle }}
+                {{ site.data[site.active_lang].home.hero.subtitle }}
             </p>
             
             <div class="flex">
                 <a href="{{ site.webapp_url }}" class="inline-flex items-center px-8 py-4 rounded-lg bg-white text-primary-600 font-semibold hover:bg-primary-50 transition-colors duration-200">
-                    {{ site.data.home.hero.cta }}
+                    {{ site.data[site.active_lang].home.hero.cta }}
                 </a>
             </div>
         </div>
