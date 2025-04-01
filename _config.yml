@@ -18,10 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# ################## #
+# ##### Jekyll ##### #
+# ################## #
+
 # Build settings
 plugins:
   - jekyll-postcss-v2
   - jekyll-polyglot
+  - jekyll-tailwind
 
 postcss:
   cache: false
@@ -34,14 +39,44 @@ include:
 exclude:
    - .sass-cache/
    - .jekyll-cache/
-   - gemfiles/
+   - .cursor/
+   - .github/
+   - .dockerignore
+   - .editorconfig
+   - .gitignore
+   - CNAME
+   - compose.yaml
+   - Dockerfile
    - Gemfile
    - Gemfile.lock
+   - Makefile
+   - package-lock.json
+   - package.json
+   - postcss.config.js
+   - README.md
    - node_modules/
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
+   - config/
+
+# ########################### #
+# ##### Jekyll Polyglot ##### #
+# ########################### #
+
+languages: ["fr", "en"]
+default_lang: "fr"
+exclude_from_localizations: ["assets"]
+lang_from_path: true
+parallel_localization: false
+
+# ########################### #
+# ##### Jekyll Tailwind ##### #
+# ########################### #
+
+tailwind:
+  config: /config/tailwind.config.js
+  input: /assets/css/main.css
+  output: /_site/assets/css/build.css
+  postcss: /config/postcss.config.js
+  minify: true
 
 # ########################## #
 # ##### Website config ##### #
@@ -56,9 +91,3 @@ webapp_url: "https://app.timescanner.io"
 
 google_analytics_id: G-E0KJRNCFZ1
 google_ads_id: AW-985274405
-
-# Internationalization
-languages: ["fr", "en"]
-default_lang: "fr"
-exclude_from_localizations: ["assets"]
-parallel_localization: true

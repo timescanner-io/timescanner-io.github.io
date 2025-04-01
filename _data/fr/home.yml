@@ -1,0 +1,12 @@
+title: Timescanner
+
+hero:
+  title: Suivez votre temps
+  title_highlight: intelligemment
+  subtitle: L'application de Time Tracking simple et intelligente pour les freelances
+  cta: Je m'inscris
+
+method:
+  title: Une méthode radicalement différente
+  intro: "Tous les outils de time tracking fonctionnent sur le même principe : démarrer un chrono, l'arrêter, recommencer... Timescanner lui, s'intègre à votre quotidien et se base sur l'outil que vous utilisez déjà : votre calendrier."
+  format_intro: "Il suffit de juste de nommer vos événements avec le format suivant :" 

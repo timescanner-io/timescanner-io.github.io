@@ -19,6 +19,7 @@ gem "jekyll", "~> 4.4"
 group :jekyll_plugins do
   gem "jekyll-postcss-v2", "~> 1.0"
   gem "jekyll-polyglot", "~> 1.9.0"
+  gem 'jekyll-tailwind', '~> 2.1'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

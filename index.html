@@ -2,7 +2,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: site.data.i18n.hero.title[site.active_lang]
+title:
 permalink: /
 ---
 
@@ -18,16 +18,16 @@ permalink: /
     <div class="container mx-auto px-4 py-20 md:py-32 relative">
         <div class="max-w-2xl">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                {{ site.data.i18n.hero.title[site.active_lang] }} <span class="text-primary-200">{{ site.data.i18n.hero.title_highlight[site.active_lang] }}</span>
+                {{ site.data.home.hero.title }} <span class="text-primary-200">{{ site.data.home.hero.title_highlight }}</span>
             </h1>
             
             <p class="text-xl md:text-2xl mb-8 text-primary-100">
-                {{ site.data.i18n.hero.subtitle[site.active_lang] }}
+                {{ site.data.home.hero.subtitle }}
             </p>
             
             <div class="flex">
                 <a href="{{ site.webapp_url }}" class="inline-flex items-center px-8 py-4 rounded-lg bg-white text-primary-600 font-semibold hover:bg-primary-50 transition-colors duration-200">
-                    {{ site.data.i18n.hero.cta[site.active_lang] }}
+                    {{ site.data.home.hero.cta }}
                 </a>
             </div>
         </div>
@@ -40,14 +40,14 @@ permalink: /
         <div class="container mx-auto px-4 py-20">
             <div class="max-w-3xl mx-auto text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    {{ site.data.i18n.method.title[site.active_lang] }}
+                    {{ site.data[site.active_lang].home.method.title }}
                 </h2>
                 
                 <p class="text-xl text-gray-600 leading-relaxed">
-                    {{ site.data.i18n.method.intro[site.active_lang] }}
+                    {{ site.data[site.active_lang].home.method.intro }}
                     <br><br>
 
-                    {{ site.data.i18n.method.format_intro[site.active_lang] }}
+                    {{ site.data[site.active_lang].home.method.format_intro }}
                     <br><br>
                     
                     <div class="relative max-w-2xl mx-auto">
