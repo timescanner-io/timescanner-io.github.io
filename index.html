@@ -43,35 +43,30 @@ permalink: /
                     {{ site.data[site.active_lang].home.method.title }}
                 </h2>
                 
-                <p class="text-xl text-gray-600 leading-relaxed">
-                    {{ site.data[site.active_lang].home.method.intro }}
-                    <br><br>
+                <p class="text-xl text-gray-600 leading-relaxed mb-12">
+                    {{ site.data[site.active_lang].home.method.description }}
+                </p>
 
-                    {{ site.data[site.active_lang].home.method.format_intro }}
-                    <br><br>
-                    
-                    <div class="relative max-w-2xl mx-auto">
-                        <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
-                        <div class="relative bg-white rounded-lg p-4 border border-gray-200 shadow-lg">
-                            <div class="flex items-start">
-                                <div class="w-2 h-full bg-primary-500 rounded-full mr-4 mt-1"></div>
-                                <div class="flex-1 text-left">
-                                    <code class="text-gray-800 font-mono text-lg block mb-1">
-                                        <span class="text-primary-600">[</span>Nom du client<span class="text-primary-600">]</span>
-                                        <span class="text-gray-600">(</span><span class="text-primary-600">[</span>Nom du projet<span class="text-primary-600">]</span><span class="text-gray-600">)</span>
-                                        <span class="text-gray-600">Titre de votre évènement</span>
-                                    </code>
-                                    <div class="text-sm text-gray-500">10:00 - 11:00</div>
-                                </div>
+                <div class="relative max-w-2xl mx-auto mb-12">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
+                    <div class="relative bg-white rounded-lg p-4 border border-gray-200 shadow-lg">
+                        <div class="flex items-start">
+                            <div class="w-2 h-full bg-primary-500 rounded-full mr-4 mt-1"></div>
+                            <div class="flex-1 text-left">
+                                <code class="text-gray-800 font-mono text-lg block mb-1">
+                                    <span class="text-primary-600">[</span>Nom du client<span class="text-primary-600">]</span>
+                                    <span class="text-gray-600">(</span><span class="text-primary-600">[</span>Nom du projet<span class="text-primary-600">]</span><span class="text-gray-600">)</span>
+                                    <span class="text-gray-600">Titre de votre évènement</span>
+                                </code>
+                                <div class="text-sm text-gray-500">10:00 - 11:00</div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <p class="text-gray-600 leading-relaxed text-2xl font-bold mb-12">
+                    {{ site.data[site.active_lang].home.method.conclusion }}
                 </p>
-            </div>
-            
-            <div class="relative max-w-4xl mx-auto">
-                <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
-                <img src="/assets/images/calendar.png" alt="Interface de Timescanner" class="relative rounded-lg shadow-2xl">
             </div>
         </div>
     </section>
@@ -81,26 +76,40 @@ permalink: /
 <div class="w-full bg-gray-50">
     <section>
         <div class="container mx-auto px-4 py-20">
-            <div class="space-y-24">
-                <!-- Maximisez votre rentabilité -->
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="w-full md:w-1/2">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                            Maximisez votre rentabilité
-                        </h3>
-                    
-                        <p class="text-gray-600 leading-relaxed text-lg">
-                            Un suivi fiable du temps, ce sont <strong>des devis plus justes</strong>, <strong>des marges maîtrisées</strong> et une <strong>meilleure rentabilité</strong>. 
-                            <br><br>
-                            Timescanner vous donne une vision claire de votre travail, pour <strong>prendre des décisions éclairées</strong> et <strong>pérenniser votre activité</strong>.
-                        </p>
-                    </div>
-                    
-                    <div class="w-full md:w-1/2">
-                        <img src="/assets/images/calendar.png" alt="Maximisez votre rentabilité" class="rounded-lg shadow-lg">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    {{ site.data[site.active_lang].home.examples.title }}
+                </h2>
+
+                <p class="text-xl text-gray-600 leading-relaxed mb-12">
+                    {{ site.data[site.active_lang].home.examples.description }}
+                </p>
+
+                <div class="relative max-w-4xl mx-auto">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
+                    <div class="relative bg-white rounded-lg shadow-2xl overflow-hidden">
+                        <!-- Barre de titre macOS -->
+                        <div class="bg-gray-100 border-b border-gray-200 px-4 py-2 flex items-center">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            </div>
+                        </div>
+                        <!-- Contenu -->
+                        <img src="/assets/images/calendar.png" alt="Interface de Timescanner" class="w-full">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+</div>
 
+<!-- Avantages Section -->
+<div class="w-full bg-white">
+    <section>
+        <div class="container mx-auto px-4 py-20">
+            <div class="space-y-24">
                 <!-- Suivre votre temps -->
                 <div class="flex flex-col-reverse md:flex-row items-center gap-12">
                     <div class="w-full md:w-1/2">
@@ -109,37 +118,29 @@ permalink: /
                     
                     <div class="w-full md:w-1/2">
                         <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                            Suivre votre temps vous coûte trop de temps
+                            {{ site.data[site.active_lang].home.time_tracking.title }}
                         </h3>
                         
                         <p class="text-gray-600 leading-relaxed text-lg">
-                            En tant que freelance, <strong>chaque minute non facturée est une perte sèche</strong>. 
-                            <br><br>
-                            Pourtant, les outils de time tracking traditionnels vous imposent de jongler avec un chrono et de tout ressaisir manuellement. 
-                            <br><br>
-                            <strong>Résultat ? Vous perdez du temps... pour le suivre.</strong>
+                            {{ site.data[site.active_lang].home.time_tracking.description }}
                         </p>
                     </div>
                 </div>
 
-                <!-- Votre calendrier -->
+                <!-- Maximisez votre rentabilité -->
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="w-full md:w-1/2">
                         <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                            Votre calendrier devient votre time tracker
+                            {{ site.data[site.active_lang].home.rentability.title }}
                         </h3>
-                        
+                    
                         <p class="text-gray-600 leading-relaxed text-lg">
-                            Plutôt que d'ajouter un nouvel outil, <strong>Timescanner transforme votre calendrier en un outil de suivi</strong>. 
-                            <br><br>
-                            Il analyse vos événements et génère automatiquement votre récapitulatif de temps. 
-                            <br><br>
-                            <strong>Zéro. Effort. Supplémentaire</strong>.
+                            {{ site.data[site.active_lang].home.rentability.description }}
                         </p>
                     </div>
                     
                     <div class="w-full md:w-1/2">
-                        <img src="/assets/images/calendar.png" alt="Votre calendrier" class="rounded-lg shadow-lg">
+                        <img src="/assets/images/calendar.png" alt="Maximisez votre rentabilité" class="rounded-lg shadow-lg">
                     </div>
                 </div>
 
@@ -151,13 +152,11 @@ permalink: /
                     
                     <div class="w-full md:w-1/2">
                         <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                            Une méthode éprouvée par les meilleurs
+                            {{ site.data[site.active_lang].home.efficiency.title }}
                         </h3>
                         
                         <p class="text-gray-600 leading-relaxed text-lg">
-                            Les CEOs les plus productifs utilisent déjà cette approche : <strong>tout passe par leur calendrier</strong>. 
-                            <br><br>
-                            En adoptant le <strong>réflexe calendrier</strong>, vous structurez votre temps, évitez les oublis et simplifiez votre gestion.
+                            {{ site.data[site.active_lang].home.efficiency.description }}
                         </p>
                     </div>
                 </div>
@@ -167,7 +166,7 @@ permalink: /
 </div>
 
 <!-- Fonctionnalités Section -->
-<div class="w-full bg-white">
+<div class="w-full bg-gray-50">
     <section>
         <div class="container mx-auto px-4 py-20">
             <div class="grid md:grid-cols-3 gap-8">
@@ -177,13 +176,11 @@ permalink: /
                     </div>
                     
                     <h4 class="text-xl font-semibold mb-4">
-                        Calcul des temps de travail et du Chiffre d'Affaires
+                        {{ site.data[site.active_lang].home.features.billing.title }}
                     </h4>
                     
                     <p class="text-gray-600">
-                        Analysez le temps passé pour chaque client, sur chacun de ses projets. Renseignez vos informations de facturation pour obtenir les factures à préparer.
-                        <br><br>
-                        <strong>Transformez du temps perdu en temps facturable et gagnez plus d'argent.</strong>
+                        {{ site.data[site.active_lang].home.features.billing.description }}
                     </p>
                 </div>
 
@@ -193,13 +190,11 @@ permalink: /
                     </div>
                     
                     <h4 class="text-xl font-semibold mb-4">
-                        Prévision de Chiffre d'Affaires en fin de mois
+                        {{ site.data[site.active_lang].home.features.revenue.title }}
                     </h4>
                     
                     <p class="text-gray-600">
-                        Organiser votre calendrier avec des évènements récurrents pour vos clients permet de prévoir dès le début du mois, votre CA en fin de mois. 
-                        <br><br>
-                        <strong>À vous de décider si vous devez travailler ou vous reposer.</strong>
+                        {{ site.data[site.active_lang].home.features.revenue.description }}
                     </p>
                 </div>
 
@@ -208,12 +203,12 @@ permalink: /
                         <i data-lucide="file-text" class="w-6 h-6 text-primary-600"></i>
                     </div>
                     
-                    <h4 class="text-xl font-semibold mb-4">Génération automatique de Compte-Rendu d'Activité</h4>
+                    <h4 class="text-xl font-semibold mb-4">
+                        {{ site.data[site.active_lang].home.features.reporting.title }}
+                    </h4>
                     
                     <p class="text-gray-600">
-                        Vos évènements fournissent des informations sur votre activité pour générer pour vous, un Compte-Rendu mensuel à envoyer à vos clients.
-                        <br><br>
-                        <strong>Ne perdez plus de temps à faire du reporting.</strong>
+                        {{ site.data[site.active_lang].home.features.reporting.description }}
                     </p>
                 </div>
             </div>
@@ -222,19 +217,15 @@ permalink: /
 </div>
 
 <!-- Calendars As A Database Section -->
-<div class="w-full bg-gray-50">
+<div class="w-full bg-white">
     <section>
         <div class="container mx-auto px-4 py-20">
             <div class="max-w-3xl mx-auto text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    Calendars As A Database
+                    {{ site.data[site.active_lang].home.database.title }}
                 </h2>
                 <p class="text-xl text-gray-600 leading-relaxed">
-                    Timescanner calcule les temps de travail en temps réel, directement depuis votre calendrier. Nous n'enregistrons rien en base de données. Désactiver votre calendrier ou changer la durée d'un évènement aura donc un impact immédiat. 
-                    
-                    <br><br>
-
-                    Votre calendrier <strong>EST</strong> la base de données. <strong>Vos évènements restent confidentiels.</strong>
+                    {{ site.data[site.active_lang].home.database.description }}
                 </p>
             </div>
             
@@ -251,11 +242,11 @@ permalink: /
     <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]"></div>
     <div class="container mx-auto px-4 py-20 relative text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">
-            Prêt à gagner du temps sur votre Time Tracking ?
+            {{ site.data[site.active_lang].home.cta.title }}
         </h2>
         <div class="flex justify-center">
             <a href="{{ site.webapp_url }}" class="inline-flex items-center px-8 py-4 rounded-lg bg-white text-primary-600 font-semibold hover:bg-primary-50 transition-colors duration-200">
-                Je m'inscris
+                {{ site.data[site.active_lang].home.cta.button }}
             </a>
         </div>
     </div>

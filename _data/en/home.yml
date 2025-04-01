@@ -8,5 +8,89 @@ hero:
 
 method:
   title: A radically different approach
-  intro: "All time tracking tools work on the same principle: start a timer, stop it, start again... Timescanner, on the other hand, integrates into your daily life and is based on the tool you already use: your calendar."
-  format_intro: "Just name your events with the following format:" 
+  text: "
+    All traditional time tracking tools require you to start and stop a timer. Tedious, right?
+    <br><br>
+    With Timescanner, no new tool, no new habits. Just name your calendar events with the following format, and your working time will be calculated automatically.
+  "
+  conclusion: Timescanner is not just a time tracker. It's an organization method designed to make you more efficient.
+
+rentability:
+  title: Increase your business revenue
+  intro: "
+    Estimating time for a fixed-price project is directly playing with your profitability. If you make a mistake in the quote, your margin disappears.
+    <br><br>
+    Timescanner allows you to analyze your past similar projects to give you a reliable estimate of the time needed.
+    <br><br>
+    <b>To increase your profitability, stop making assumptions. Base your decisions on concrete data.</b>
+  "
+
+examples:
+  title: Example of a calendar managed with Timescanner
+  description: "
+    Standardized event names for automatic working time calculation.
+    Color coding per client for immediate visibility.
+    Tags to distinguish between billable and non-billable time.
+    
+    <br><br>
+    And since everything happens in your usual calendar, you benefit from all its features: quick search, bulk renaming, flexible organization.
+    <br><br>
+    Your calendar is no longer just for planning, it becomes a real time tracking tool.
+  "
+
+time_tracking:
+  title: Stop wasting time tracking time
+  description: "
+    As a freelancer, <strong>every minute not spent on a client is a financial loss</strong> because you can't bill it.
+    <br><br>
+    Yet traditional time tracking tools force you to juggle with a timer and manually re-enter all information. Even though you've already recorded it in your calendar.
+    <br><br>
+    <strong>Result? You waste time... tracking time.</strong>
+  "
+
+efficiency:
+  title: Become more efficient and productive
+  description: "
+    The most productive CEOs already use this approach: <strong>everything goes through their calendar</strong>. They are organized down to the quarter hour to manage their business.
+    <br><br>
+    <i>The only difference between them and you? They have an assistant to manage their calendar for them.</i>
+    <br><br>
+    By adopting the <strong>calendar reflex</strong>, you structure your time, avoid forgetfulness, and simplify your management.
+  "
+
+features:
+  billing:
+    title: Prepare your invoices quickly
+    description: "
+      Set the hourly rate for each of your clients to automatically calculate the amount of invoices to send them.
+      <br><br>
+      <strong>Transform lost time into billable time and earn more money.</strong>
+    "
+  revenue:
+    title: Estimate your end-of-month revenue
+    description: "
+      Organizing your calendar with recurring events for your clients allows you to forecast your revenue at the end of the month from the beginning.
+      <br><br>
+      <strong>It's up to you to decide whether to work or rest.</strong>
+    "
+  reporting:
+    title: Generate your Activity Reports easily
+    description: "
+      Your calendar events provide enough information about your activity to automatically generate a monthly report to send to your clients.
+      <br><br>
+      <strong>Stop wasting time on reporting.</strong>
+    "
+
+database:
+  title: Calendars As A Database
+  description: "
+    Timescanner calculates working time in real-time, directly from your calendar. We don't store anything in a database. Disabling your calendar or changing an event's duration will have an immediate impact.
+    
+    <br><br>
+
+    Your calendar <strong>IS</strong> the database. <strong>Your events remain confidential.</strong>
+  "
+
+cta:
+  title: Ready to save time on your time tracking?
+  button: Sign up 

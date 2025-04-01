@@ -1,12 +1,96 @@
 title: Timescanner
 
 hero:
-  title: Suivez votre temps
-  title_highlight: intelligemment
-  subtitle: L'application de Time Tracking simple et intelligente pour les freelances
+  title: Le calcul des temps de travail
+  title_highlight: simple & intelligent
+  subtitle: Le seul Time Tracker qui ne vous rajoute pas de charge mentale. Le seul SaaS pensé pour ne pas être utilisé.
   cta: Je m'inscris
 
 method:
   title: Une méthode radicalement différente
-  intro: "Tous les outils de time tracking fonctionnent sur le même principe : démarrer un chrono, l'arrêter, recommencer... Timescanner lui, s'intègre à votre quotidien et se base sur l'outil que vous utilisez déjà : votre calendrier."
-  format_intro: "Il suffit de juste de nommer vos événements avec le format suivant :" 
+  description: "
+    Les outils classiques de Time Tracking vous imposent tous de démarrer et d'arrêter un chrono. Fastidieux, non ?
+    <br><br>
+    Avec Timescanner, aucun nouvel outil, aucune nouvelle habitude. Il suffit de nommer les événements de votre agenda avec le format suivant, pour que vos temps de travail soient calculés automatiquement.
+  "
+  conclusion: Timescanner n'est pas un simple Time Tracker. C'est une méthode d'organisation pensée pour vous rendre plus efficace.
+
+rentability:
+  title: Augmentez le Chiffre d'Affaires de votre activité
+  description: "
+    Estimer le temps nécessaire pourune mission au forfait, c'est jouer directement avec votre rentabilité. Si vous faites une erreur sur le devis, c'est votre marge qui disparait.
+    <br><br>
+    Timescanner vous permet d'analyser vos missions similaire passées, pour vous donner une estimation fiable du temps nécessaire.
+    <br><br>
+    <b>Pour augmenter votre rentabilité, ne faites plus de suppositions. Basez-vous sur des données concrètes.</b>
+  "
+
+examples:
+  title: Exemple d'agenda géré avec Timescanner
+  description: "
+    Des noms d'événements normalisés pour le calcul automatique du temps de travail.
+    Un code couleur par client pour une visibilité immédiate.
+    Des tags pour distinguer ce qui est facturé ou offert.
+    
+    <br><br>
+    Et comme tout se fait dans votre agenda habituel, vous profitez de toutes ses fonctionnalités : recherche rapide, renommage en masse, organisation flexible.
+    <br><br>
+    Votre agenda ne sert plus seulement à planifier, il devient un véritable outil de suivi du temps.
+  "
+
+time_tracking:
+  title: Ne perdez plus votre temps à le suivre
+  description: "
+    En tant que freelance, <strong>chaque minute non consacrée à un client est une perte financière</strong>, car vous ne la facturez pas.
+    <br><br>
+    Pourtant, les outils de Time Tracking traditionnels vous imposent de jongler avec un chrono et de ressaisir toutes les informations manuellement. Alors que vous les avez déjà enregistrées dans votre calendrier.
+    <br><br>
+    <strong>Résultat ? Vous perdez du temps... pour le suivre.</strong>
+  "
+
+efficiency:
+  title: Devenez plus efficace et performant
+  description: "
+    Les CEOs les plus productifs utilisent déjà cette approche : <strong>tout passe par leur calendrier</strong>. Ils sont organisés au quart d'heure près pour gérer leurs business.
+    <br><br>
+    <i>La seule différence entre eux et vous ? Ils ont un(e) assistant(e) pour gérer leur calendrier à leur place.</i>
+    <br><br>
+    En adoptant le <strong>réflexe calendrier</strong>, vous structurez votre temps, évitez les oublis et simplifiez votre gestion.
+  "
+
+features:
+  billing:
+    title: Préparez vos factures rapidement
+    description: "
+      Renseignez le Taux Horaire de chacun de vos clients pour calculer automatiquement le montant des factures à lui envoyer.
+      <br><br>
+      <strong>Transformez du temps perdu en temps facturable et gagnez plus d'argent.</strong>
+    "
+  revenue:
+    title: Estimez votre Chiffre d'Affaires en fin de mois
+    description: "
+      Organiser votre calendrier avec des évènements récurrents pour vos clients, permet de prévoir dès le début du mois, votre CA en fin de mois. 
+      <br><br>
+      <strong>À vous de décider si vous devez travailler ou vous reposer.</strong>
+    "
+  reporting:
+    title: Générez facilement vos Compte-Rendus d'Activité
+    description: "
+      Les évènements de votre agenda fournissent suffisament d'informations sur votre activité pour générer à votre place, un Compte-Rendu mensuel à envoyer à vos clients.
+      <br><br>
+      <strong>Ne perdez plus de temps à faire du reporting.</strong>
+    "
+
+database:
+  title: Calendars As A Database
+  description: "
+    Timescanner calcule les temps de travail en temps réel, directement depuis votre calendrier. Nous n'enregistrons rien en base de données. Désactiver votre calendrier ou changer la durée d'un évènement aura donc un impact immédiat. 
+    
+    <br><br>
+
+    Votre calendrier <strong>EST</strong> la base de données. <strong>Vos évènements restent confidentiels.</strong>
+  "
+
+cta:
+  title: Prêt à gagner du temps sur votre Time Tracking ?
+  button: Je m'inscris
