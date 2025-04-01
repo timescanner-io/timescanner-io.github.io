@@ -1,23 +1,29 @@
 title: Timescanner
 
 hero:
-  title: Track your time
-  title_highlight: intelligently
-  subtitle: The simple and smart time tracking app for freelancers
+  title: Time tracking
+  title_highlight: simple & smart
+  subtitle: The only Time Tracker that doesn't add mental load. The only SaaS designed not to be used.
   cta: Sign up
 
 method:
   title: A radically different approach
-  text: "
+  description: "
     All traditional time tracking tools require you to start and stop a timer. Tedious, right?
     <br><br>
     With Timescanner, no new tool, no new habits. Just name your calendar events with the following format, and your working time will be calculated automatically.
   "
   conclusion: Timescanner is not just a time tracker. It's an organization method designed to make you more efficient.
 
+event:
+  client_name: Client's name
+  project_name: Project's name
+  event_title: Event's title
+  event_time: 10:00 - 11:00
+
 rentability:
   title: Increase your business revenue
-  intro: "
+  description: "
     Estimating time for a fixed-price project is directly playing with your profitability. If you make a mistake in the quote, your margin disappears.
     <br><br>
     Timescanner allows you to analyze your past similar projects to give you a reliable estimate of the time needed.
@@ -85,11 +91,8 @@ database:
   title: Calendars As A Database
   description: "
     Timescanner calculates working time in real-time, directly from your calendar. We don't store anything in a database. Disabling your calendar or changing an event's duration will have an immediate impact.
-    
-    <br><br>
-
-    Your calendar <strong>IS</strong> the database. <strong>Your events remain confidential.</strong>
   "
+  conclusion: Your calendar IS the database. Your events remain confidential.
 
 cta:
   title: Ready to save time on your time tracking?

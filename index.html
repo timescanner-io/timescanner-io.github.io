@@ -12,7 +12,7 @@ permalink: /
     
     <!-- Image de fond -->
     <div class="absolute inset-0 opacity-10">
-        <img src="/assets/images/calendar.png" alt="" class="absolute right-0 top-1/2 -translate-y-1/2 h-[80vh] object-contain">
+        <img src="/assets/images/hero.jpg" alt="" class="absolute right-0 top-1/2 -translate-y-1/2 h-[80vh] object-contain">
     </div>
     
     <div class="container mx-auto px-4 py-20 md:py-32 relative">
@@ -35,215 +35,201 @@ permalink: /
 </section>
 
 <!-- Méthode Section -->
-<div class="w-full bg-white">
-    <section>
-        <div class="container mx-auto px-4 py-20">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    {{ site.data[site.active_lang].home.method.title }}
-                </h2>
+<section class="w-full bg-white">
+    <div class="container mx-auto px-4 py-20 max-w-3xl text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            {{ site.data[site.active_lang].home.method.title }}
+        </h2>
+        
+        <p class="text-xl text-gray-600 leading-relaxed mb-12">
+            {{ site.data[site.active_lang].home.method.description }}
+        </p>
+
+        <div class="relative max-w-2xl mx-auto mb-12">
+            <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
+
+            <div class="relative bg-white rounded-lg p-4 border border-gray-200 shadow-lg">
+                <div class="flex items-start">
+                    <div class="w-2 h-full bg-primary-500 rounded-full mr-4 mt-1"></div>
+                    <div class="flex-1 text-left">
+                        <code class="text-gray-800 font-mono text-lg block mb-1">
+                            <span class="text-primary-600">[</span>{{ site.data[site.active_lang].home.event.client_name }}<span class="text-primary-600">]</span>
+                            <span class="text-gray-600">(</span><span class="text-primary-600">[</span>{{ site.data[site.active_lang].home.event.project_name }}<span class="text-primary-600">]</span><span class="text-gray-600">)</span>
+                            <span class="text-gray-600">{{ site.data[site.active_lang].home.event.event_title }}</span>
+                        </code>
+
+                        <div class="text-sm text-gray-500">{{ site.data[site.active_lang].home.event.event_time }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-gray-600 leading-relaxed text-2xl font-bold">
+            {{ site.data[site.active_lang].home.method.conclusion }}
+        </p>
+    </div>
+</section>
+
+<!-- Calendar example -->
+<section class="w-full bg-gray-50">
+    <div class="container mx-auto px-4 py-20 max-w-3xl text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            {{ site.data[site.active_lang].home.examples.title }}
+        </h2>
+
+        <p class="text-xl text-gray-600 leading-relaxed mb-12">
+            {{ site.data[site.active_lang].home.examples.description }}
+        </p>
+
+        <div class="relative max-w-4xl mx-auto">
+            <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
+            <div class="relative bg-white rounded-lg shadow-2xl overflow-hidden">
+                <!-- Barre de titre macOS -->
+                <div class="bg-gray-100 border-b border-gray-200 px-4 py-2 flex items-center">
+                    <div class="flex space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                </div>
+                <!-- Contenu -->
+                <img src="/assets/images/calendar.png" alt="Interface de Timescanner" class="w-full">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Avantages Section -->
+<section class="w-full bg-white">
+    <div class="container mx-auto px-4 py-20 space-y-24">
+        <!-- Suivre votre temps -->
+        <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <img src="/assets/images/chronometer.jpg" alt="Suivre votre temps" class="rounded-lg shadow-lg">
+            </div>
+            
+            <div class="w-full md:w-1/2">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                    {{ site.data[site.active_lang].home.time_tracking.title }}
+                </h3>
                 
-                <p class="text-xl text-gray-600 leading-relaxed mb-12">
-                    {{ site.data[site.active_lang].home.method.description }}
-                </p>
-
-                <div class="relative max-w-2xl mx-auto mb-12">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
-                    <div class="relative bg-white rounded-lg p-4 border border-gray-200 shadow-lg">
-                        <div class="flex items-start">
-                            <div class="w-2 h-full bg-primary-500 rounded-full mr-4 mt-1"></div>
-                            <div class="flex-1 text-left">
-                                <code class="text-gray-800 font-mono text-lg block mb-1">
-                                    <span class="text-primary-600">[</span>Nom du client<span class="text-primary-600">]</span>
-                                    <span class="text-gray-600">(</span><span class="text-primary-600">[</span>Nom du projet<span class="text-primary-600">]</span><span class="text-gray-600">)</span>
-                                    <span class="text-gray-600">Titre de votre évènement</span>
-                                </code>
-                                <div class="text-sm text-gray-500">10:00 - 11:00</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="text-gray-600 leading-relaxed text-2xl font-bold mb-12">
-                    {{ site.data[site.active_lang].home.method.conclusion }}
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    {{ site.data[site.active_lang].home.time_tracking.description }}
                 </p>
             </div>
         </div>
-    </section>
-</div>
 
-<!-- Avantages Section -->
-<div class="w-full bg-gray-50">
-    <section>
-        <div class="container mx-auto px-4 py-20">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    {{ site.data[site.active_lang].home.examples.title }}
-                </h2>
-
-                <p class="text-xl text-gray-600 leading-relaxed mb-12">
-                    {{ site.data[site.active_lang].home.examples.description }}
-                </p>
-
-                <div class="relative max-w-4xl mx-auto">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
-                    <div class="relative bg-white rounded-lg shadow-2xl overflow-hidden">
-                        <!-- Barre de titre macOS -->
-                        <div class="bg-gray-100 border-b border-gray-200 px-4 py-2 flex items-center">
-                            <div class="flex space-x-2">
-                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                            </div>
-                        </div>
-                        <!-- Contenu -->
-                        <img src="/assets/images/calendar.png" alt="Interface de Timescanner" class="w-full">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<!-- Avantages Section -->
-<div class="w-full bg-white">
-    <section>
-        <div class="container mx-auto px-4 py-20">
-            <div class="space-y-24">
-                <!-- Suivre votre temps -->
-                <div class="flex flex-col-reverse md:flex-row items-center gap-12">
-                    <div class="w-full md:w-1/2">
-                        <img src="/assets/images/calendar.png" alt="Suivre votre temps" class="rounded-lg shadow-lg">
-                    </div>
-                    
-                    <div class="w-full md:w-1/2">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                            {{ site.data[site.active_lang].home.time_tracking.title }}
-                        </h3>
-                        
-                        <p class="text-gray-600 leading-relaxed text-lg">
-                            {{ site.data[site.active_lang].home.time_tracking.description }}
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Maximisez votre rentabilité -->
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="w-full md:w-1/2">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                            {{ site.data[site.active_lang].home.rentability.title }}
-                        </h3>
-                    
-                        <p class="text-gray-600 leading-relaxed text-lg">
-                            {{ site.data[site.active_lang].home.rentability.description }}
-                        </p>
-                    </div>
-                    
-                    <div class="w-full md:w-1/2">
-                        <img src="/assets/images/calendar.png" alt="Maximisez votre rentabilité" class="rounded-lg shadow-lg">
-                    </div>
-                </div>
-
-                <!-- Méthode éprouvée -->
-                <div class="flex flex-col-reverse md:flex-row items-center gap-12">
-                    <div class="w-full md:w-1/2">
-                        <img src="/assets/images/calendar.png" alt="Méthode éprouvée" class="rounded-lg shadow-lg">
-                    </div>
-                    
-                    <div class="w-full md:w-1/2">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                            {{ site.data[site.active_lang].home.efficiency.title }}
-                        </h3>
-                        
-                        <p class="text-gray-600 leading-relaxed text-lg">
-                            {{ site.data[site.active_lang].home.efficiency.description }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<!-- Fonctionnalités Section -->
-<div class="w-full bg-gray-50">
-    <section>
-        <div class="container mx-auto px-4 py-20">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
-                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-                        <i data-lucide="line-chart" class="w-6 h-6 text-primary-600"></i>
-                    </div>
-                    
-                    <h4 class="text-xl font-semibold mb-4">
-                        {{ site.data[site.active_lang].home.features.billing.title }}
-                    </h4>
-                    
-                    <p class="text-gray-600">
-                        {{ site.data[site.active_lang].home.features.billing.description }}
-                    </p>
-                </div>
-
-                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
-                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-                        <i data-lucide="calendar-check" class="w-6 h-6 text-primary-600"></i>
-                    </div>
-                    
-                    <h4 class="text-xl font-semibold mb-4">
-                        {{ site.data[site.active_lang].home.features.revenue.title }}
-                    </h4>
-                    
-                    <p class="text-gray-600">
-                        {{ site.data[site.active_lang].home.features.revenue.description }}
-                    </p>
-                </div>
-
-                <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
-                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
-                        <i data-lucide="file-text" class="w-6 h-6 text-primary-600"></i>
-                    </div>
-                    
-                    <h4 class="text-xl font-semibold mb-4">
-                        {{ site.data[site.active_lang].home.features.reporting.title }}
-                    </h4>
-                    
-                    <p class="text-gray-600">
-                        {{ site.data[site.active_lang].home.features.reporting.description }}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<!-- Calendars As A Database Section -->
-<div class="w-full bg-white">
-    <section>
-        <div class="container mx-auto px-4 py-20">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                    {{ site.data[site.active_lang].home.database.title }}
-                </h2>
-                <p class="text-xl text-gray-600 leading-relaxed">
-                    {{ site.data[site.active_lang].home.database.description }}
+        <!-- Maximisez votre rentabilité -->
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                    {{ site.data[site.active_lang].home.rentability.title }}
+                </h3>
+            
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    {{ site.data[site.active_lang].home.rentability.description }}
                 </p>
             </div>
             
-            <div class="relative max-w-4xl mx-auto">
-                <div class="absolute -inset-1 bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg blur opacity-25"></div>
-                <img src="/assets/images/calendar.png" alt="Calendars As A Database" class="relative rounded-lg shadow-2xl">
+            <div class="w-full md:w-1/2">
+                <img src="/assets/images/revenue.jpg" alt="Maximisez votre rentabilité" class="rounded-lg shadow-lg">
             </div>
         </div>
-    </section>
-</div>
+
+        <!-- Méthode éprouvée -->
+        <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <img src="/assets/images/ceo.jpg" alt="Méthode éprouvée" class="rounded-lg shadow-lg">
+            </div>
+            
+            <div class="w-full md:w-1/2">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                    {{ site.data[site.active_lang].home.efficiency.title }}
+                </h3>
+                
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    {{ site.data[site.active_lang].home.efficiency.description }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fonctionnalités Section -->
+<section class="w-full bg-gray-50">
+    <div class="container mx-auto px-4 py-20">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
+                <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                    <i data-lucide="line-chart" class="w-6 h-6 text-primary-600"></i>
+                </div>
+                
+                <h4 class="text-xl font-semibold mb-4">
+                    {{ site.data[site.active_lang].home.features.billing.title }}
+                </h4>
+                
+                <p class="text-gray-600">
+                    {{ site.data[site.active_lang].home.features.billing.description }}
+                </p>
+            </div>
+
+            <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
+                <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                    <i data-lucide="calendar-check" class="w-6 h-6 text-primary-600"></i>
+                </div>
+                
+                <h4 class="text-xl font-semibold mb-4">
+                    {{ site.data[site.active_lang].home.features.revenue.title }}
+                </h4>
+                
+                <p class="text-gray-600">
+                    {{ site.data[site.active_lang].home.features.revenue.description }}
+                </p>
+            </div>
+
+            <div class="p-6 bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
+                <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                    <i data-lucide="file-text" class="w-6 h-6 text-primary-600"></i>
+                </div>
+                
+                <h4 class="text-xl font-semibold mb-4">
+                    {{ site.data[site.active_lang].home.features.reporting.title }}
+                </h4>
+                
+                <p class="text-gray-600">
+                    {{ site.data[site.active_lang].home.features.reporting.description }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Calendars As A Database Section -->
+<section class="w-full bg-white">
+    <div class="container mx-auto px-4 py-20 max-w-3xl text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            {{ site.data[site.active_lang].home.database.title }}
+        </h2>
+        
+        <p class="text-xl text-gray-600 leading-relaxed mb-12">
+            {{ site.data[site.active_lang].home.database.description }}
+        </p>
+
+        <p class="text-2xl text-gray-600 font-bold leading-relaxed">
+            {{ site.data[site.active_lang].home.database.conclusion }}
+        </p>
+    </div>
+</section>
 
 <!-- CTA Section -->
 <section class="relative bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900 text-white overflow-hidden">
     <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]"></div>
+    
     <div class="container mx-auto px-4 py-20 relative text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">
             {{ site.data[site.active_lang].home.cta.title }}
         </h2>
+        
         <div class="flex justify-center">
             <a href="{{ site.webapp_url }}" class="inline-flex items-center px-8 py-4 rounded-lg bg-white text-primary-600 font-semibold hover:bg-primary-50 transition-colors duration-200">
                 {{ site.data[site.active_lang].home.cta.button }}

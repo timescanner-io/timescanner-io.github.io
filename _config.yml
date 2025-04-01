@@ -89,5 +89,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://timescanner.io" # the base hostname & protocol for your site, e.g. http://example.com
 webapp_url: "https://app.timescanner.io"
 
+contact_email: contact@timescanner.io
+
 google_analytics_id: G-E0KJRNCFZ1
 google_ads_id: AW-985274405

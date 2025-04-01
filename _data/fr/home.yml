@@ -15,6 +15,12 @@ method:
   "
   conclusion: Timescanner n'est pas un simple Time Tracker. C'est une méthode d'organisation pensée pour vous rendre plus efficace.
 
+event:
+  client_name: Nom du client
+  project_name: Nom du projet
+  event_title: Titre de votre évènement
+  event_time: 10:00 - 11:00
+
 rentability:
   title: Augmentez le Chiffre d'Affaires de votre activité
   description: "
@@ -85,11 +91,8 @@ database:
   title: Calendars As A Database
   description: "
     Timescanner calcule les temps de travail en temps réel, directement depuis votre calendrier. Nous n'enregistrons rien en base de données. Désactiver votre calendrier ou changer la durée d'un évènement aura donc un impact immédiat. 
-    
-    <br><br>
-
-    Votre calendrier <strong>EST</strong> la base de données. <strong>Vos évènements restent confidentiels.</strong>
   "
+  conclusion: Votre calendrier EST la base de données. Vos évènements restent confidentiels.
 
 cta:
   title: Prêt à gagner du temps sur votre Time Tracking ?

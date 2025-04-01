@@ -1,0 +1,127 @@
+---
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: Timescanner
+permalink: /usecases
+---
+
+<section class="w-full bg-white">
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-4xl font-bold text-gray-900 mb-6">
+                A qui s'adresse Timescanner ?
+            </h1>
+
+            <p class="text-xl text-gray-600">
+                Calculer ses temps de travail présente de nombreux avantages. Beaucoup d'entre nous en ont besoin, pour des raisons toutes différentes.
+                <br><br>
+                Découvrez quelques cas d'usage qui vous permettront de comprendre comment Timescanner peut vous aider.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Avantages Section -->
+<section class="w-full bg-gray-50">
+    <div class="container mx-auto px-4 py-20 space-y-24">
+        <!-- Freelances -->
+        <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <img src="/assets/images/freelancer.jpg" alt="Suivre votre temps" class="rounded-lg shadow-lg">
+            </div>
+            
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">
+                    Aux freelances qui veulent faciliter la préparation de leurs factures
+                </h2>
+                
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Lorsque vous travaillez pour plusieurs clients en simultané, il peut s'avérer difficile et chronophage de savoir combien de temps vous avez travaillé pour chacun d'eux.
+                    <br><br>
+                    Timescanner vous permet de suivre le temps passé pour chaque client, et de générer vos factures en quelques clics.
+                    <br><br>
+                    Vous avez toujours un oeil sur l'aterrisage de temps, prévu à la fin du mois. Cela vous permet aussi de savoir si vous risquez de dépasser le budget de votre client.
+                </p>
+            </div>
+        </div>
+
+        <!-- Agences -->
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">
+                    Aux agences qui veulent réussir leurs devis au forfait
+                </h2>
+            
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Une prestation au forfait n'est ni plus, ni moins, qu'une prestation au temps passé. Sauf que vous devez estimer le temps que vous allez passer.
+                    <br><br>
+                    Si l'estimation est bonne, le projet peut être très rentable. Mais dans le cas contraire, vous risquez de perdre beaucoup d'argent.
+                    <br><br>
+                    Avoir des données fiables sur des projets passés similaires vous permettra de faire des estimations précises.
+                </p>
+            </div>
+            
+            <div class="w-full md:w-1/2">
+                <img src="/assets/images/agency.jpg" alt="Maximisez votre rentabilité" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+
+        <!-- Credits -->
+        <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <img src="/assets/images/company.jpg" alt="Méthode éprouvée" class="rounded-lg shadow-lg">
+            </div>
+            
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">
+                    Aux entreprises qui préparent des dossiers de Crédit d'Impôt
+                </h2>
+                
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Que ce soit le Crédit d'Impôt Innovation (CII), le Crédit d'Impôt Recherche (CIR) ou le Crédit d'Impôt Jeux-Vidéo (CIJV), Timescanner vous permet de connaitre en quelques secondes, le temps passé sur chacun de vos projets.
+                    <br><br>
+                    Vous n'aurez plus besoin de demander à chacun de vos collaborateurs de faire le calcul à la main. Ils auront juste à utiliser leur calendrier.
+                </p>
+            </div>
+        </div>
+
+        <!-- Anyone -->
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">
+                    A tous ceux qui veulent augmenter leur efficacité
+                </h2>
+            
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Même si vous ne facturez pas votre travail au temps passé, il est important de savoir combien de temps vous consacrez à vos tâches.
+                    <br><br>
+                    Cela vous permettra de savoir si votre temps est mal réparti, ou si vous le gaspillez dans des tâches sans valeur ajoutée. 
+                    <br><br>
+                    Servez-vous en pour expliquer à votre manager, pourquoi vous devriez réduire votre temps de réunion.
+                </p>
+            </div>
+            
+            <div class="w-full md:w-1/2">
+                <img src="/assets/images/unknown.jpg" alt="Maximisez votre rentabilité" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="relative bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]"></div>
+    
+    <div class="container mx-auto px-4 py-20 relative text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            {{ site.data[site.active_lang].home.cta.title }}
+        </h2>
+        
+        <div class="flex justify-center">
+            <a href="{{ site.webapp_url }}" class="inline-flex items-center px-8 py-4 rounded-lg bg-white text-primary-600 font-semibold hover:bg-primary-50 transition-colors duration-200">
+                {{ site.data[site.active_lang].home.cta.button }}
+            </a>
+        </div>
+    </div>
+</section>
