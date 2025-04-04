@@ -1,9 +1,19 @@
 <!doctype html>
 
+{% assign pageTitle = site.title %}
+        
+{% if page.title %}
+    {% assign pageTitle = page.title | append: " | " | append: site.title %}
+{% endif %}
+
 <html lang="{{ site.active_lang }}">
     <head>
         <meta charset="utf-8">
-        <title>{{ site.full_name }} | {{ page.title }}</title>
+        <meta name="default-language" content="{{ site.default_lang }}">
+        
+        {% I18n_Headers %}
+
+        <title>{{ pageTitle | liquify }}</title>
         
         <meta name="description" content="{{ site.description }}" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +21,7 @@
         <meta name="theme-color" content="#ffffff">
 
         <meta property="og:locale" content="{{ site.active_lang }}" />
-        <meta property="og:title" content="{{ site.full_name }} | {{ page.title }}" />
+        <meta property="og:title" content="{{ pageTitle }}" />
         <meta property="og:description" content="{{ site.description }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ page.url }}" />
@@ -19,6 +29,58 @@
         <meta property="og:site_name" content="{{ site.title }}" />
 
         {% include assets.html %}
+
+        <script>
+            function fetchAvailableTranslations() {
+                var availableTranslations = {};
+                
+                var links = document.querySelectorAll('link[rel="alternate"][hreflang]');
+                
+                links.forEach(function(link) {
+                    availableTranslations[link.hreflang] = link.href;
+                });
+
+                return availableTranslations;
+            }
+
+            function getLanguageToRedirect(defaultLanguage, availableTranslations, browserLanguages) {
+                var languageToRedirect = 'en';
+
+                // Parcourir les langues du navigateur par ordre de préférence
+                for (var i = 0; i < browserLanguages.length; i++) {
+                    // Prend juste 'fr' de 'fr-FR'
+                    var preferredLang = browserLanguages[i].split('-')[0].toLowerCase();
+
+                    if (availableTranslations.hasOwnProperty(preferredLang)) {
+                        languageToRedirect = preferredLang;
+                        break;
+                    }
+                }
+
+                return languageToRedirect;
+            }
+
+            function redirectToPreferredLanguage() {
+                var defaultLanguage = document.querySelector('meta[name="default-language"]');
+                var availableTranslations = fetchAvailableTranslations();
+                var browserLanguages = navigator.languages || [navigator.language || navigator.userLanguage];
+
+                var languageToRedirect = getLanguageToRedirect(defaultLanguage, availableTranslations, browserLanguages);
+
+                if (languageToRedirect !== document.documentElement.lang) {
+                    var redirectUrl = availableTranslations[languageToRedirect];
+                    
+                    // Supprimer le double slash final si présent
+                    if (redirectUrl && redirectUrl.endsWith('//')) {
+                        redirectUrl = redirectUrl.slice(0, -1);
+                    }
+                    
+                    window.location.replace(redirectUrl);
+                }
+            }
+
+            redirectToPreferredLanguage();
+        </script>
     </head>
 
     <body class="min-h-screen bg-gray-50">

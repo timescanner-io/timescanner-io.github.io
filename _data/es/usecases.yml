@@ -1,0 +1,49 @@
+meta:
+  title: Casos de uso
+
+intro:
+  title: ¿A quién va dirigido Timescanner?
+  description: |
+    Calcular tu tiempo de trabajo ofrece muchas ventajas. Muchos de nosotros lo necesitamos, por razones muy diferentes.
+    <br><br>
+    Descubre algunos casos de uso que te permitirán comprender cómo Timescanner puede ayudarte.
+
+sections:
+  freelancers:
+    image_alt: Freelance trabajando en un ordenador
+    title: Para freelancers que quieren facilitar la preparación de sus facturas
+    description: |
+      Cuando trabajas para varios clientes simultáneamente, puede ser difícil y llevar mucho tiempo saber cuánto tiempo has trabajado para cada uno.
+      <br><br>
+      Timescanner te permite seguir el tiempo dedicado a cada cliente y generar tus facturas en unos pocos clics.
+      <br><br>
+      Siempre tienes un ojo en el tiempo previsto para fin de mes. Esto también te permite saber si corres el riesgo de exceder el presupuesto de tu cliente.
+  agencies:
+    image_alt: Equipo de agencia en reunión
+    title: Para agencias que quieren acertar con sus presupuestos a precio fijo
+    description: |
+      Un servicio a precio fijo no es ni más ni menos que un servicio por tiempo dedicado. Salvo que tienes que estimar el tiempo que vas a pasar.
+      <br><br>
+      Si la estimación es buena, el proyecto puede ser muy rentable. Pero si no, corres el riesgo de perder mucho dinero.
+      <br><br>
+      Tener datos fiables sobre proyectos pasados similares te permitirá hacer estimaciones precisas.
+  companies:
+    image_alt: Empleados de oficina trabajando juntos
+    title: Para empresas que preparan expedientes de Crédito Fiscal
+    description: |
+      Ya sea el Crédito Fiscal por Innovación (CII), el Crédito Fiscal por Investigación (CIR) o el Crédito Fiscal por Videojuegos (CIJV), Timescanner te permite saber en segundos cuánto tiempo se dedicó a cada uno de tus proyectos.
+      <br><br>
+      Ya no necesitarás pedir a cada uno de tus colaboradores que hagan el cálculo a mano. Solo tendrán que usar su calendario. # Nota: Los créditos fiscales mencionados (CII, CIR, CIJV) son específicos de Francia. Podrías generalizar esto o proporcionar ejemplos relevantes para otras regiones.
+  anyone:
+    image_alt: Persona pensando frente a una pizarra
+    title: Para todos aquellos que quieren aumentar su eficiencia
+    description: |
+      Incluso si no facturas tu trabajo por tiempo dedicado, es importante saber cuánto tiempo dedicas a tus tareas.
+      <br><br>
+      Esto te permitirá saber si tu tiempo está mal distribuido o si lo estás desperdiciando en tareas sin valor añadido. 
+      <br><br>
+      Utilízalo para explicarle a tu jefe por qué deberías reducir tu tiempo de reunión.
+
+cta:
+  title: ¿Listo para descubrir cómo Timescanner puede ayudarte?
+  button: Probar gratis 

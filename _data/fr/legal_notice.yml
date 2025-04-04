@@ -1,0 +1,64 @@
+meta:
+  title: Mentions Légales
+
+editor:
+  title: Éditeur du site
+  content: |
+    Le site <b>Timescanner</b> est édité par la société <b>ABVENTURE</b>, SARL au capital de 1 000 €, immatriculée au RCS de Lyon sous le numéro 985 290 170, dont le siège social est situé au 2 Rue des Varennes, 69660 Collonges au Mont d'Or, France.
+    <br><br>
+    <b>Directeur de la publication</b> : Adrien Blandin (Gérant)
+    <br>
+    <b>Email de contact</b> : {{ site.contact_email }}
+
+hosting:
+  title: Hébergement
+  content: |
+    Le site <b>Timescanner</b> est hébergé par <b>Amazon Web Services (AWS)</b>, dont les serveurs sont situés en région <b>Paris (eu-west-3)</b>.
+    <br><br>
+    AWS France<br>
+    31 Place des Corolles, 92400 Courbevoie, France<br>
+    Site web : <a href="https://aws.amazon.com/fr/" class="text-primary-600 hover:text-primary-700">https://aws.amazon.com/fr/</a>
+
+intellectual_property:
+  title: Propriété intellectuelle
+  content: |
+    L'ensemble des éléments constituant le site (textes, images, logos, technologies utilisées, architecture, etc.) sont protégés par les lois en vigueur sur la propriété intellectuelle et restent la propriété exclusive de <b>ABVENTURE</b> ou de ses partenaires.
+    <br><br>
+    Toute reproduction, modification, diffusion ou exploitation, même partielle, de ces éléments est strictement interdite sans autorisation préalable.
+
+third_party_services:
+  title: Services tiers
+  intro: "Le site <b>Timescanner</b> utilise les services suivants :"
+  services:
+    - name: Stripe
+      description: pour la gestion des paiements sécurisés
+      url: https://stripe.com/fr
+    - name: Auth0
+      description: pour l'authentification et la gestion des accès
+      url: https://auth0.com
+  outro: Ces services sont soumis à leurs propres politiques de confidentialité et conditions d'utilisation.
+
+data_protection:
+  title: Collecte et traitement des données personnelles
+  content: |
+    Dans le cadre de son fonctionnement, <b>Timescanner</b> peut être amené à collecter certaines données personnelles des utilisateurs (nom, adresse e-mail, informations de connexion, etc.).
+    <br><br>
+    Les traitements réalisés respectent le <b>Règlement Général sur la Protection des Données (RGPD)</b> et la législation française en vigueur.
+    <br><br>
+    L'utilisateur dispose d'un droit d'accès, de rectification, d'opposition et de suppression des données le concernant. Pour exercer ces droits, veuillez nous contacter à l'adresse <b>{{ site.contact_email }}</b>.
+
+liability:
+  title: Responsabilité
+  content: |
+    <b>ABVENTURE</b> met tout en œuvre pour assurer l'accessibilité et la sécurité du site <b>Timescanner</b>. Toutefois, nous ne saurions être tenus responsables en cas d'interruptions, erreurs techniques, ou dommages liés à l'utilisation du site.
+    <br><br>
+    L'utilisateur est responsable de la protection de son matériel et de ses identifiants d'accès.
+
+jurisdiction:
+  title: Droit applicable et juridiction compétente
+  content: |
+    Les présentes mentions légales sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux compétents seront ceux du ressort du siège social de <b>ABVENTURE</b>.
+
+last_update:
+  label: Dernière mise à jour
+  date: "{{ site.time | date: '%d/%m/%Y' }}" 

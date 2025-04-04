@@ -1,0 +1,105 @@
+meta:
+  title: Conditions Générales d'Utilisation
+
+object:
+  title: Objet
+  content: |
+    Les présentes Conditions Générales d'Utilisation (CGU) définissent les modalités d'accès et d'utilisation du service <b>Timescanner</b>, édité par la société <b>ABVENTURE</b>.
+    <br><br>
+    L'utilisation du service implique l'acceptation pleine et entière des présentes CGU.
+
+service_description:
+  title: Description du service
+  content: |
+    <b>Timescanner</b> est une solution permettant aux freelances et professionnels facturant à l'heure de <b>calculer leur temps de travail</b> et de <b>générer des factures</b> en fonction des événements enregistrés dans leurs calendriers synchronisés.
+    <br><br>
+    L'application extrait les événements en respectant un format spécifique et propose un calcul automatisé des heures facturables.
+
+service_access:
+  title: Accès au service
+  intro: |
+    Le service <b>Timescanner</b> est accessible via un abonnement payant, avec une <b>période d'essai gratuite de 30 jours</b>.
+    <br><br>
+    Pour utiliser <b>Timescanner</b>, l'utilisateur doit :
+  requirements:
+    - Créer un compte en fournissant des informations valides,
+    - Accepter les présentes CGU,
+    - Synchroniser au moins un calendrier.
+  outro: L'utilisateur est responsable de l'exactitude des informations fournies et de la sécurité de ses identifiants de connexion.
+
+pricing:
+  title: Tarification (HT – Hors Taxes)
+  intro: Les prix indiqués ci-dessous sont exprimés en <b>euros hors taxes (HT)</b>. La TVA applicable sera ajoutée lors de la facturation.
+  monthly:
+    title: Abonnement mensuel
+    intro: |
+      Avec un engagement sur <b>1 mois</b>, reconduit tacitement, la tarification est <b>dégressive</b> en fonction du nombre de calendriers synchronisés :
+    tiers:
+      - <b>4,90€ HT par mois, par calendrier</b> à partir de <b>1 calendrier</b>
+      - <b>4,40€ HT par mois, par calendrier</b> à partir de <b>3 calendriers</b>
+      - <b>3,90€ HT par mois, par calendrier</b> à partir de <b>10 calendriers</b>
+      - <b>3,40€ HT par mois, par calendrier</b> à partir de <b>30 calendriers</b>
+  yearly:
+    title: Abonnement annuel
+    intro: |
+      Avec un engagement sur <b>12 mois</b>, facturé une fois par an, la tarification est également <b>dégressive</b> :
+    tiers:
+      - <b>49€ HT par an, par calendrier</b> à partir de <b>1 calendrier</b>
+      - <b>44€ HT par an, par calendrier</b> à partir de <b>3 calendriers</b>
+      - <b>39€ HT par an, par calendrier</b> à partir de <b>10 calendriers</b>
+      - <b>34€ HT par an, par calendrier</b> à partir de <b>30 calendriers</b>
+  examples:
+    title: Exemples
+    intro: "Si un utilisateur synchronise <b>5 calendriers</b>, son abonnement sera calculé ainsi :"
+    items:
+      - Mensuel : <b>5 x 4,40€ = 22€ HT par mois</b>
+      - Annuel : <b>5 x 44€ = 220€ HT par an</b>
+
+trial_termination:
+  title: Période d'essai et résiliation
+  content: |
+    Tous les abonnements comprennent une <b>période d'essai gratuite de 30 jours</b>.
+    <br><br>
+    Pendant cette période, l'utilisateur peut <b>annuler son abonnement sans frais</b>.
+    <br><br>
+    Après la période d'essai, l'abonnement est facturé selon la formule choisie.
+    <br><br>
+    L'utilisateur peut résilier son abonnement à tout moment, mais celui-ci restera actif jusqu'à la fin de la période d'engagement en cours (mois ou année selon la formule choisie). <b>Aucun remboursement partiel ne sera effectué.</b>
+
+responsibilities:
+  title: Responsabilités
+  editor:
+    title: Responsabilité de l'éditeur
+    content: |
+      <b>ABVENTURE</b> s'engage à mettre en œuvre tous les moyens nécessaires pour assurer la disponibilité et le bon fonctionnement de <b>Timescanner</b>. Cependant, <b>ABVENTURE</b> ne peut être tenue responsable des interruptions temporaires du service ou des éventuelles pertes de données.
+  user:
+    title: Responsabilité de l'utilisateur
+    intro: "L'utilisateur s'engage à :"
+    items:
+      - Utiliser le service de manière conforme aux lois et règlements en vigueur,
+      - Ne pas tenter de contourner les mesures de sécurité mises en place,
+      - Assurer la confidentialité de ses identifiants de connexion.
+
+data_protection:
+  title: Protection des données personnelles
+  content: |
+    Le service <b>Timescanner</b> traite certaines données personnelles conformément au <b>Règlement Général sur la Protection des Données (RGPD)</b> et à la réglementation française.
+    <br><br>
+    Les informations collectées sont nécessaires au fonctionnement du service (synchronisation des calendriers, facturation, support).
+    <br><br>
+    L'utilisateur dispose d'un droit d'accès, de rectification et de suppression de ses données en contactant <b>ABVENTURE</b> à l'adresse suivante : <b>{{ site.contact_email }}</b>.
+
+terms_modification:
+  title: Modification des CGU
+  content: <b>ABVENTURE</b> se réserve le droit de modifier les présentes CGU à tout moment. Les utilisateurs seront informés des mises à jour, et la poursuite de l'utilisation du service après une modification vaut acceptation des nouvelles conditions.
+
+jurisdiction:
+  title: Droit applicable et juridiction compétente
+  content: |
+    Les présentes CGU sont régies par le droit français.
+    <br><br>
+    En cas de litige, et à défaut de résolution amiable, les tribunaux compétents seront ceux du ressort du siège social de <b>ABVENTURE</b>.
+
+last_update:
+  label: Dernière mise à jour
+  date: "{{ site.time | date: '%d/%m/%Y' }}" 

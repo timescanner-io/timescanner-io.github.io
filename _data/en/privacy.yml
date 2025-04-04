@@ -1,0 +1,120 @@
+meta:
+  title: Privacy Policy
+
+introduction:
+  title: Introduction
+  content: |
+    Protecting your personal data is a priority for <b>Timescanner</b>, published by the company <b>ABVENTURE</b>. This policy aims to explain what data is collected, how it is used, and what your rights are regarding its processing.
+    <br><br>
+    By using <b>Timescanner</b>, you accept the practices described in this policy.
+
+data_collected:
+  title: Data Collected
+  intro: |
+    As part of its operation, <b>Timescanner</b> collects and processes only the <b>data strictly necessary</b> for the use of the service.
+  user_provided:
+    title: Data provided by the user
+    intro: "When registering and using the service, the following data may be collected:"
+    items:
+      - "<b>Identity</b>: First name, last name, email address"
+      - "<b>Login information</b>: Email address, password (stored securely)"
+      - "<b>Subscription and billing</b>: Payment-related information (via Stripe)"
+      - "<b>URLs of synchronized calendars</b> (<b>analyzed events are never saved</b>)"
+  technical_analytical:
+    title: Technical and analytical data
+    items:
+      - "<b>Navigation data</b>: IP address, browser type, pages visited"
+      - "<b>Usage data</b>: Connection timestamps, interactions with the service"
+      - "<b>Error and performance tracking data</b>: Via <b>Sentry</b>"
+      - "<b>Analytical data</b>: Via <b>Google Analytics</b>"
+      - "<b>User interaction data</b>: Query processing via <b>OpenAI</b>"
+
+processing_purposes:
+  title: Purposes of processing
+  intro: "The collected data is used for the following purposes:"
+  items:
+    - "<b>Provide and improve the service</b>: Calendar synchronization and work time analysis"
+    - "<b>Manage subscriptions and payments</b>: Secure processing via <b>Stripe</b>"
+    - "<b>Ensure security and compliance</b>: Access management and authentication via <b>Auth0</b>"
+    - "<b>Detect and correct errors</b>: Monitoring via <b>Sentry</b>"
+    - "<b>Analyze and optimize user experience</b>: Statistical tracking with <b>Google Analytics</b>"
+    - "<b>Improve user interactions</b>: Query processing via <b>OpenAI</b>"
+
+third_party_sharing:
+  title: Data sharing with third parties
+  intro: "Your data is <b>never sold</b>. However, it may be transmitted to the following third-party services, which comply with current security and confidentiality standards:"
+  table:
+    headers:
+      service: Service
+      usage: Usage
+      policy: Privacy Policy
+    rows:
+      - service: <b>Stripe</b>
+        usage: Payment management
+        policy_url: https://stripe.com/privacy
+        policy_text: stripe.com/privacy
+      - service: <b>Auth0</b>
+        usage: Secure authentication
+        policy_url: https://auth0.com/privacy
+        policy_text: auth0.com/privacy
+      - service: <b>Sentry</b>
+        usage: Error detection and tracking
+        policy_url: https://sentry.io/privacy
+        policy_text: sentry.io/privacy
+      - service: <b>Google Analytics</b>
+        usage: Web traffic analysis
+        policy_url: https://policies.google.com/privacy
+        policy_text: policies.google.com/privacy
+      - service: <b>OpenAI</b>
+        usage: User interaction processing
+        policy_url: https://openai.com/privacy
+        policy_text: openai.com/privacy
+
+data_security:
+  title: Data Security
+  content: |
+    <b>Timescanner</b> implements all necessary technical and organizational measures to protect your data against unauthorized access, alteration, or disclosure.
+    <br><br>
+    <b>Analyzed events are never saved</b>: only the calendar URL is stored to enable synchronization.
+
+data_retention:
+  title: Data Retention
+  intro: "Data is kept for the duration strictly necessary for the purposes described above:"
+  items:
+    - "<b>Account data</b>: Until the account is deleted by the user"
+    - "<b>Payment data</b>: In accordance with legal obligations (10 years in France)"
+    - "<b>Logs and technical data</b>: Variable duration depending on the third-party service used"
+  outro: At the end of these periods, the data is deleted or irreversibly anonymized.
+
+user_rights:
+  title: User Rights
+  intro: |
+    In accordance with the <b>General Data Protection Regulation (GDPR)</b> and applicable French laws, you have the following rights:
+  items:
+    - "<b>Right of access</b>: Consult the data concerning you"
+    - "<b>Right of rectification</b>: Modify or update your data"
+    - "<b>Right to erasure</b>: Permanently delete your data"
+    - "<b>Right to object</b>: Refuse certain processing"
+    - "<b>Right to portability</b>: Recover your data in a structured format"
+  outro: You can exercise these rights by contacting us at <b>{{ site.contact_email }}</b>.
+
+cookies:
+  title: Cookies and Tracking
+  intro: "<b>Timescanner</b> uses cookies to:"
+  items:
+    - Ensure the proper functioning of the service
+    - Analyze audience with <b>Google Analytics</b>
+    - Improve the user experience
+  outro: You can manage your cookie preferences through your browser settings.
+
+policy_modification:
+  title: Modification of the Privacy Policy
+  content: <b>ABVENTURE</b> reserves the right to modify this policy at any time. In case of a significant update, users will be notified.
+
+contact:
+  title: Contact
+  content: For any questions regarding this policy or to exercise your rights, you can contact us at <b>{{ site.contact_email }}</b>.
+
+last_update:
+  label: Last updated
+  date: "{{ site.time | date: '%d/%m/%Y' }}" 

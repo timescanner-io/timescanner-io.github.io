@@ -1,0 +1,49 @@
+meta:
+  title: Use Cases
+
+intro:
+  title: Who is Timescanner for?
+  description: |
+    Calculating your work time offers many benefits. Many of us need it, for very different reasons.
+    <br><br>
+    Discover some use cases that will help you understand how Timescanner can help you.
+
+sections:
+  freelancers:
+    image_alt: Freelancer working on a computer
+    title: For freelancers who want to simplify invoice preparation
+    description: |
+      When working for multiple clients simultaneously, it can be difficult and time-consuming to know how much time you've spent on each.
+      <br><br>
+      Timescanner allows you to track the time spent for each client and generate your invoices in just a few clicks.
+      <br><br>
+      You always have an eye on the expected time landing at the end of the month. This also helps you know if you risk exceeding your client's budget.
+  agencies:
+    image_alt: Agency team in a meeting
+    title: For agencies that want to succeed with fixed-price quotes
+    description: |
+      A fixed-price service is nothing more than a time-based service. Except you have to estimate the time you will spend.
+      <br><br>
+      If the estimate is good, the project can be very profitable. But if not, you risk losing a lot of money.
+      <br><br>
+      Having reliable data on similar past projects will allow you to make accurate estimates.
+  companies:
+    image_alt: Office employees working together
+    title: For companies preparing Tax Credit files
+    description: |
+      Whether it's the Innovation Tax Credit (CII), the Research Tax Credit (CIR), or the Video Game Tax Credit (CIJV), Timescanner lets you know in seconds how much time was spent on each of your projects.
+      <br><br>
+      You will no longer need to ask each of your employees to calculate it manually. They just need to use their calendar. # Note: Specific tax credits mentioned (CII, CIR, CIJV) are French. You might want to generalize this or provide examples relevant to other regions.
+  anyone:
+    image_alt: Person thinking in front of a whiteboard
+    title: For anyone who wants to increase their efficiency
+    description: |
+      Even if you don't bill your work based on time spent, it's important to know how much time you dedicate to your tasks.
+      <br><br>
+      This will help you know if your time is poorly allocated or if you are wasting it on tasks with no added value. 
+      <br><br>
+      Use it to explain to your manager why you should reduce your meeting time.
+
+cta:
+  title: Ready to discover how Timescanner can help you?
+  button: Try for free 

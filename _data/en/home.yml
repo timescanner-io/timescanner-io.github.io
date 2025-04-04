@@ -1,99 +1,100 @@
-title: Timescanner
+meta:
+  title: Home
 
 hero:
-  title: Time tracking
-  title_highlight: simple & smart
-  subtitle: The only Time Tracker that doesn't add mental load. The only SaaS designed not to be used.
+  title: Work time calculation
+  title_highlight: simple & intelligent
+  subtitle: The only Time Tracker that doesn't add to your mental load. The only SaaS designed not to be used.
   cta: Sign up
+  image_alt: Abstract illustration of a calendar and graphs
 
 method:
-  title: A radically different approach
-  description: "
-    All traditional time tracking tools require you to start and stop a timer. Tedious, right?
+  title: A radically different method
+  description: |
+    Traditional Time Tracking tools all require you to start and stop a timer. Tedious, right?
     <br><br>
-    With Timescanner, no new tool, no new habits. Just name your calendar events with the following format, and your working time will be calculated automatically.
-  "
-  conclusion: Timescanner is not just a time tracker. It's an organization method designed to make you more efficient.
+    With Timescanner, no new tool, no new habit. Simply name your calendar events using the following format, and your work times will be calculated automatically.
+  conclusion: Timescanner isn't just a Time Tracker. It's an organizational method designed to make you more efficient.
 
 event:
-  client_name: Client's name
-  project_name: Project's name
-  event_title: Event's title
-  event_time: 10:00 - 11:00
+  client_name: Client Name
+  project_name: Project Name
+  event_title: Your event title
+  event_time: 10:00 AM - 11:00 AM
 
 rentability:
   title: Increase your business revenue
-  description: "
-    Estimating time for a fixed-price project is directly playing with your profitability. If you make a mistake in the quote, your margin disappears.
+  description: |
+    Estimating the time needed for a fixed-price project directly impacts your profitability. If you make a mistake on the quote, your margin disappears.
     <br><br>
-    Timescanner allows you to analyze your past similar projects to give you a reliable estimate of the time needed.
+    Timescanner allows you to analyze your past similar projects to give you a reliable estimate of the time required.
     <br><br>
-    <b>To increase your profitability, stop making assumptions. Base your decisions on concrete data.</b>
-  "
+    <b>To increase your profitability, stop making assumptions. Rely on concrete data.</b>
+  image_alt: Growth chart symbolizing increased profitability
 
 examples:
   title: Example of a calendar managed with Timescanner
-  description: "
-    Standardized event names for automatic working time calculation.
-    Color coding per client for immediate visibility.
-    Tags to distinguish between billable and non-billable time.
+  description: |
+    Standardized event names for automatic work time calculation.
+    A color code per client for immediate visibility.
+    Tags to distinguish between billed and offered services.
     
     <br><br>
-    And since everything happens in your usual calendar, you benefit from all its features: quick search, bulk renaming, flexible organization.
+    And since everything is done in your usual calendar, you benefit from all its features: quick search, bulk renaming, flexible organization.
     <br><br>
-    Your calendar is no longer just for planning, it becomes a real time tracking tool.
-  "
+    Your calendar is no longer just for planning; it becomes a real time-tracking tool.
+  image_alt: Example of a Google Calendar managed with Timescanner
 
 time_tracking:
-  title: Stop wasting time tracking time
-  description: "
-    As a freelancer, <strong>every minute not spent on a client is a financial loss</strong> because you can't bill it.
+  title: Stop wasting time tracking it
+  description: |
+    As a freelancer, <b>every minute not spent on a client is a financial loss</b>, because you don't bill for it.
     <br><br>
-    Yet traditional time tracking tools force you to juggle with a timer and manually re-enter all information. Even though you've already recorded it in your calendar.
+    Yet, traditional Time Tracking tools force you to juggle a timer and re-enter all information manually. Even though you've already recorded it in your calendar.
     <br><br>
-    <strong>Result? You waste time... tracking time.</strong>
-  "
+    <b>The result? You waste time... tracking it.</b>
+  image_alt: Stopwatch symbolizing the time lost due to manual tracking
 
 efficiency:
   title: Become more efficient and productive
-  description: "
-    The most productive CEOs already use this approach: <strong>everything goes through their calendar</strong>. They are organized down to the quarter hour to manage their business.
+  description: |
+    The most productive CEOs already use this approach: <b>everything goes through their calendar</b>. They are organized down to the quarter-hour to manage their businesses.
     <br><br>
     <i>The only difference between them and you? They have an assistant to manage their calendar for them.</i>
     <br><br>
-    By adopting the <strong>calendar reflex</strong>, you structure your time, avoid forgetfulness, and simplify your management.
-  "
+    By adopting the <b>calendar reflex</b>, you structure your time, avoid forgetting things, and simplify your management.
+  image_alt: Organized person working efficiently on a computer
 
 features:
   billing:
     title: Prepare your invoices quickly
-    description: "
-      Set the hourly rate for each of your clients to automatically calculate the amount of invoices to send them.
+    description: |
+      Enter the Hourly Rate for each of your clients to automatically calculate the invoice amount to send them.
       <br><br>
-      <strong>Transform lost time into billable time and earn more money.</strong>
-    "
+      <b>Turn lost time into billable time and earn more money.</b>
   revenue:
     title: Estimate your end-of-month revenue
-    description: "
-      Organizing your calendar with recurring events for your clients allows you to forecast your revenue at the end of the month from the beginning.
+    description: |
+      Organizing your calendar with recurring events for your clients allows you to predict your end-of-month revenue from the beginning of the month. 
       <br><br>
-      <strong>It's up to you to decide whether to work or rest.</strong>
-    "
+      <b>It's up to you to decide whether to work or rest.</b>
   reporting:
-    title: Generate your Activity Reports easily
-    description: "
-      Your calendar events provide enough information about your activity to automatically generate a monthly report to send to your clients.
+    title: Easily generate your Activity Reports
+    description: |
+      The events in your calendar provide enough information about your activity to generate a monthly report for you to send to your clients.
       <br><br>
-      <strong>Stop wasting time on reporting.</strong>
-    "
+      <b>Stop wasting time on reporting.</b>
 
 database:
   title: Calendars As A Database
-  description: "
-    Timescanner calculates working time in real-time, directly from your calendar. We don't store anything in a database. Disabling your calendar or changing an event's duration will have an immediate impact.
-  "
-  conclusion: Your calendar IS the database. Your events remain confidential.
+  description: |
+    Timescanner calculates work times in real-time, directly from your calendar. We don't save anything in a database. Disabling your calendar or changing the duration of an event will therefore have an immediate impact. 
+    
+    <br><br>
+
+    Your calendar <b>IS</b> the database. <b>Your events remain confidential.</b>
+  conclusion: Your data stays on your calendar. We don't have access to it.
 
 cta:
-  title: Ready to save time on your time tracking?
-  button: Sign up 
+  title: Ready to save time on your Time Tracking?
+  button: Sign up

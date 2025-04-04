@@ -1,0 +1,89 @@
+---
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: "{{ site.data[site.active_lang].term_of_services.meta.title }}"
+permalink: /term-of-services
+---
+
+{% assign t = site.data[site.active_lang].term_of_services %}
+
+<div class="container mx-auto px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+            {{ t.meta.title }}
+        </h1>
+
+        <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.object.title }}</h2>
+            <p>{{ t.object.content }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.service_description.title }}</h2>
+            <p>{{ t.service_description.content }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.service_access.title }}</h2>
+            <p>{{ t.service_access.intro }}</p>
+            <ul class="list-disc pl-6 mb-4">
+                {% for item in t.service_access.requirements %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+            <p>{{ t.service_access.outro }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.pricing.title }}</h2>
+            <p>{{ t.pricing.intro }}</p>
+
+            <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">{{ t.pricing.monthly.title }}</h3>
+            <p class="mb-4">{{ t.pricing.monthly.intro }}</p>
+            <ul class="list-disc pl-6">
+                {% for item in t.pricing.monthly.tiers %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+
+            <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">{{ t.pricing.yearly.title }}</h3>
+            <p class="mb-4">{{ t.pricing.yearly.intro }}</p>
+            <ul class="list-disc pl-6 mb-4">
+                {% for item in t.pricing.yearly.tiers %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+
+            <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">{{ t.pricing.examples.title }}</h3>
+            <p>{{ t.pricing.examples.intro }}</p>
+            <ul class="list-disc pl-6">
+                {% for item in t.pricing.examples.items %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.trial_termination.title }}</h2>
+            <p>{{ t.trial_termination.content }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.responsibilities.title }}</h2>
+            <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">{{ t.responsibilities.editor.title }}</h3>
+            <p>{{ t.responsibilities.editor.content }}</p>
+
+            <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">{{ t.responsibilities.user.title }}</h3>
+            <p class="mb-4">{{ t.responsibilities.user.intro }}</p>
+            <ul class="list-disc pl-6">
+                {% for item in t.responsibilities.user.items %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.data_protection.title }}</h2>
+            <p>{{ t.data_protection.content | liquify }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.terms_modification.title }}</h2>
+            <p>{{ t.terms_modification.content }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.jurisdiction.title }}</h2>
+            <p class="mb-4">{{ t.jurisdiction.content }}</p>
+
+            <p>
+                <b>{{ t.last_update.label }} : {{ t.last_update.date | liquify }}</b>
+            </p>
+        </div>
+    </div>
+</div>

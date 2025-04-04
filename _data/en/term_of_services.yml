@@ -1,0 +1,105 @@
+meta:
+  title: Terms of Service
+
+object:
+  title: Object
+  content: |
+    These General Terms of Service (TOS) define the terms and conditions for accessing and using the <b>Timescanner</b> service, published by the company <b>ABVENTURE</b>.
+    <br><br>
+    Use of the service implies full acceptance of these TOS.
+
+service_description:
+  title: Service Description
+  content: |
+    <b>Timescanner</b> is a solution allowing freelancers and professionals billing by the hour to <b>calculate their work time</b> and <b>generate invoices</b> based on events recorded in their synchronized calendars.
+    <br><br>
+    The application extracts events following a specific format and offers automated calculation of billable hours.
+
+service_access:
+  title: Service Access
+  intro: |
+    The <b>Timescanner</b> service is accessible via a paid subscription, with a <b>free 30-day trial period</b>.
+    <br><br>
+    To use <b>Timescanner</b>, the user must:
+  requirements:
+    - Create an account by providing valid information,
+    - Accept these TOS,
+    - Synchronize at least one calendar.
+  outro: The user is responsible for the accuracy of the information provided and the security of their login credentials.
+
+pricing:
+  title: Pricing (Excluding VAT)
+  intro: The prices indicated below are expressed in <b>euros excluding VAT</b>. Applicable VAT will be added during invoicing.
+  monthly:
+    title: Monthly Subscription
+    intro: |
+      With a <b>1-month</b> commitment, automatically renewed, the pricing is <b>degressive</b> based on the number of synchronized calendars:
+    tiers:
+      - <b>€4.90 excl. VAT per month, per calendar</b> from <b>1 calendar</b>
+      - <b>€4.40 excl. VAT per month, per calendar</b> from <b>3 calendars</b>
+      - <b>€3.90 excl. VAT per month, per calendar</b> from <b>10 calendars</b>
+      - <b>€3.40 excl. VAT per month, per calendar</b> from <b>30 calendars</b>
+  yearly:
+    title: Annual Subscription
+    intro: |
+      With a <b>12-month</b> commitment, billed once a year, the pricing is also <b>degressive</b>:
+    tiers:
+      - <b>€49 excl. VAT per year, per calendar</b> from <b>1 calendar</b>
+      - <b>€44 excl. VAT per year, per calendar</b> from <b>3 calendars</b>
+      - <b>€39 excl. VAT per year, per calendar</b> from <b>10 calendars</b>
+      - <b>€34 excl. VAT per year, per calendar</b> from <b>30 calendars</b>
+  examples:
+    title: Examples
+    intro: "If a user synchronizes <b>5 calendars</b>, their subscription will be calculated as follows:"
+    items:
+      - Monthly: <b>5 x €4.40 = €22 excl. VAT per month</b>
+      - Annual: <b>5 x €44 = €220 excl. VAT per year</b>
+
+trial_termination:
+  title: Trial Period and Termination
+  content: |
+    All subscriptions include a <b>free 30-day trial period</b>.
+    <br><br>
+    During this period, the user can <b>cancel their subscription free of charge</b>.
+    <br><br>
+    After the trial period, the subscription is billed according to the chosen plan.
+    <br><br>
+    The user can terminate their subscription at any time, but it will remain active until the end of the current commitment period (month or year depending on the chosen plan). <b>No partial refunds will be issued.</b>
+
+responsibilities:
+  title: Responsibilities
+  editor:
+    title: Publisher's Responsibility
+    content: |
+      <b>ABVENTURE</b> undertakes to implement all necessary means to ensure the availability and proper functioning of <b>Timescanner</b>. However, <b>ABVENTURE</b> cannot be held responsible for temporary service interruptions or potential data loss.
+  user:
+    title: User's Responsibility
+    intro: "The user agrees to:"
+    items:
+      - Use the service in compliance with applicable laws and regulations,
+      - Not attempt to bypass the security measures in place,
+      - Ensure the confidentiality of their login credentials.
+
+data_protection:
+  title: Personal Data Protection
+  content: |
+    The <b>Timescanner</b> service processes certain personal data in accordance with the <b>General Data Protection Regulation (GDPR)</b> and French regulations.
+    <br><br>
+    The information collected is necessary for the operation of the service (calendar synchronization, billing, support).
+    <br><br>
+    The user has the right to access, rectify, and delete their data by contacting <b>ABVENTURE</b> at the following address: <b>{{ site.contact_email }}</b>.
+
+terms_modification:
+  title: Modification of the TOS
+  content: <b>ABVENTURE</b> reserves the right to modify these TOS at any time. Users will be informed of updates, and continued use of the service after a modification constitutes acceptance of the new terms.
+
+jurisdiction:
+  title: Applicable Law and Competent Jurisdiction
+  content: |
+    These TOS are governed by French law.
+    <br><br>
+    In the event of a dispute, and failing amicable resolution, the competent courts will be those within the jurisdiction of the registered office of <b>ABVENTURE</b>. # Note: Consider adapting the jurisdiction clause for international users.
+
+last_update:
+  label: Last updated
+  date: "{{ site.time | date: '%d/%m/%Y' }}" # Note: Consider using a more internationally standard date format 

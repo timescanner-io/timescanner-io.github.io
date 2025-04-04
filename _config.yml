@@ -22,7 +22,6 @@
 # ##### Jekyll ##### #
 # ################## #
 
-# Build settings
 plugins:
   - jekyll-postcss-v2
   - jekyll-polyglot
@@ -44,6 +43,7 @@ exclude:
    - .dockerignore
    - .editorconfig
    - .gitignore
+   - assets/css/
    - CNAME
    - compose.yaml
    - Dockerfile
@@ -61,8 +61,8 @@ exclude:
 # ##### Jekyll Polyglot ##### #
 # ########################### #
 
-languages: ["fr", "en"]
-default_lang: "fr"
+languages: ["en", "fr", "es"]
+default_lang: "en"
 exclude_from_localization: ["assets"]
 lang_from_path: true
 parallel_localization: false

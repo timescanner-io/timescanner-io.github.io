@@ -1,0 +1,105 @@
+meta:
+  title: Condiciones Generales de Uso
+
+object:
+  title: Objeto
+  content: |
+    Las presentes Condiciones Generales de Uso (CGU) definen las modalidades de acceso y uso del servicio <b>Timescanner</b>, editado por la empresa <b>ABVENTURE</b>.
+    <br><br>
+    El uso del servicio implica la aceptación plena y completa de las presentes CGU.
+
+service_description:
+  title: Descripción del servicio
+  content: |
+    <b>Timescanner</b> es una solución que permite a los freelancers y profesionales que facturan por horas <b>calcular su tiempo de trabajo</b> y <b>generar facturas</b> en función de los eventos registrados en sus calendarios sincronizados.
+    <br><br>
+    La aplicación extrae los eventos respetando un formato específico y propone un cálculo automatizado de las horas facturables.
+
+service_access:
+  title: Acceso al servicio
+  intro: |
+    El servicio <b>Timescanner</b> es accesible mediante una suscripción de pago, con un <b>período de prueba gratuito de 30 días</b>.
+    <br><br>
+    Para utilizar <b>Timescanner</b>, el usuario debe:
+  requirements:
+    - Crear una cuenta proporcionando información válida,
+    - Aceptar las presentes CGU,
+    - Sincronizar al menos un calendario.
+  outro: El usuario es responsable de la exactitud de la información proporcionada y de la seguridad de sus credenciales de conexión.
+
+pricing:
+  title: Tarifas (Sin IVA)
+  intro: Los precios indicados a continuación se expresan en <b>euros sin impuestos (Sin IVA)</b>. El IVA aplicable se añadirá en la facturación.
+  monthly:
+    title: Suscripción mensual
+    intro: |
+      Con un compromiso de <b>1 mes</b>, renovado tácitamente, la tarifa es <b>decreciente</b> en función del número de calendarios sincronizados:
+    tiers:
+      - <b>4,90 € sin IVA por mes, por calendario</b> a partir de <b>1 calendario</b>
+      - <b>4,40 € sin IVA por mes, por calendario</b> a partir de <b>3 calendarios</b>
+      - <b>3,90 € sin IVA por mes, por calendario</b> a partir de <b>10 calendarios</b>
+      - <b>3,40 € sin IVA por mes, por calendario</b> a partir de <b>30 calendarios</b>
+  yearly:
+    title: Suscripción anual
+    intro: |
+      Con un compromiso de <b>12 meses</b>, facturado una vez al año, la tarifa también es <b>decreciente</b>:
+    tiers:
+      - <b>49 € sin IVA por año, por calendario</b> a partir de <b>1 calendario</b>
+      - <b>44 € sin IVA por año, por calendario</b> a partir de <b>3 calendarios</b>
+      - <b>39 € sin IVA por año, por calendario</b> a partir de <b>10 calendarios</b>
+      - <b>34 € sin IVA por año, por calendario</b> a partir de <b>30 calendarios</b>
+  examples:
+    title: Ejemplos
+    intro: "Si un usuario sincroniza <b>5 calendarios</b>, su suscripción se calculará así:"
+    items:
+      - Mensual: <b>5 x 4,40 € = 22 € sin IVA por mes</b>
+      - Anual: <b>5 x 44 € = 220 € sin IVA por año</b>
+
+trial_termination:
+  title: Período de prueba y cancelación
+  content: |
+    Todas las suscripciones incluyen un <b>período de prueba gratuito de 30 días</b>.
+    <br><br>
+    Durante este período, el usuario puede <b>cancelar su suscripción sin coste</b>.
+    <br><br>
+    Después del período de prueba, la suscripción se factura según la fórmula elegida.
+    <br><br>
+    El usuario puede cancelar su suscripción en cualquier momento, pero esta permanecerá activa hasta el final del período de compromiso en curso (mes o año según la fórmula elegida). <b>No se realizarán reembolsos parciales.</b>
+
+responsibilities:
+  title: Responsabilidades
+  editor:
+    title: Responsabilidad del editor
+    content: |
+      <b>ABVENTURE</b> se compromete a implementar todos los medios necesarios para asegurar la disponibilidad y el buen funcionamiento de <b>Timescanner</b>. Sin embargo, <b>ABVENTURE</b> no puede ser considerada responsable de las interrupciones temporales del servicio o de las posibles pérdidas de datos.
+  user:
+    title: Responsabilidad del usuario
+    intro: "El usuario se compromete a:"
+    items:
+      - Utilizar el servicio de manera conforme a las leyes y reglamentos vigentes,
+      - No intentar eludir las medidas de seguridad implementadas,
+      - Asegurar la confidencialidad de sus credenciales de conexión.
+
+data_protection:
+  title: Protección de datos personales
+  content: |
+    El servicio <b>Timescanner</b> trata ciertos datos personales de conformidad con el <b>Reglamento General de Protección de Datos (RGPD)</b> y la normativa francesa.
+    <br><br>
+    La información recopilada es necesaria para el funcionamiento del servicio (sincronización de calendarios, facturación, soporte).
+    <br><br>
+    El usuario dispone de un derecho de acceso, rectificación y supresión de sus datos contactando a <b>ABVENTURE</b> en la siguiente dirección: <b>{{ site.contact_email }}</b>.
+
+terms_modification:
+  title: Modificación de las CGU
+  content: <b>ABVENTURE</b> se reserva el derecho de modificar las presentes CGU en cualquier momento. Se informará a los usuarios de las actualizaciones, y la continuación del uso del servicio después de una modificación implica la aceptación de las nuevas condiciones.
+
+jurisdiction:
+  title: Derecho aplicable y jurisdicción competente
+  content: |
+    Las presentes CGU se rigen por el derecho francés.
+    <br><br>
+    En caso de litigio, y a falta de resolución amistosa, los tribunales competentes serán los del domicilio social de <b>ABVENTURE</b>. # Nota: Adaptar la referencia legal si es necesario
+
+last_update:
+  label: Última actualización
+  date: "{{ site.time | date: '%d/%m/%Y' }}" # Nota: Considerar formato de fecha internacional 

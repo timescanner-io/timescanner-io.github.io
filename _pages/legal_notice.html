@@ -1,0 +1,50 @@
+---
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: "{{ site.data[site.active_lang].legal_notice.meta.title }}"
+permalink: /legal-notice
+---
+
+{% assign t = site.data[site.active_lang].legal_notice %}
+
+<div class="container mx-auto px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+            {{ t.meta.title }}
+        </h1>
+
+        <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.editor.title }}</h2>
+            <p class="mb-4">{{ t.editor.content | liquify }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.hosting.title }}</h2>
+            <p class="mb-4">{{ t.hosting.content }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.intellectual_property.title }}</h2>
+            <p>{{ t.intellectual_property.content }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.third_party_services.title }}</h2>
+            <p>{{ t.third_party_services.intro }}</p>
+            <ul class="list-disc pl-6 mb-4">
+                {% for service in t.third_party_services.services %}
+                    <li><b>{{ service.name }}</b> {{ service.description }} (<a href="{{ service.url }}" class="text-primary-600 hover:text-primary-700">{{ service.url }}</a>)</li>
+                {% endfor %}
+            </ul>
+            <p>{{ t.third_party_services.outro }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.data_protection.title }}</h2>
+            <p>{{ t.data_protection.content | liquify }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.liability.title }}</h2>
+            <p>{{ t.liability.content }}</p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.jurisdiction.title }}</h2>
+            <p class="mb-4">{{ t.jurisdiction.content }}</p>
+
+            <p>
+                <b>{{ t.last_update.label }} : {{ t.last_update.date | liquify }}</b>
+            </p>
+        </div>
+    </div>
+</div>

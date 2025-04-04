@@ -1,0 +1,76 @@
+meta:
+  title: Tarifs
+
+intro:
+  title: Des tarifs simple et transparents, adaptés à vos besoins
+  description: |
+    Les prix restent bas pour ne pas alourdir vos charges. Nous ne sommes pas là pour vendre un abonnement de plus que vous oublierez.
+    <br><br>
+    Timescanner est là pour vous faire gagner du temps et de l'argent pas l'inverse.
+
+pricing_table:
+  title: Des tarifs progressifs, pour vous aider à économiser
+  description: |
+    Que vous ayiez plusieurs calendriers personnels ou que vous souhaitiez avoir de la visibilité sur les temps de travail de tous vos collaborateurs, Timescanner sait analyser et agréger les évènenements de plusieurs agendas.
+    <br><br>
+    La tarification se fait PAR calendrier, que vous pouvez ajouter ou supprimer à tout moment.
+    <br><br>
+    <b>Plus vous avez de calendriers, plus le prix unitaire baisse.</b> Pour encore plus d'économies, choisissez l'abonnement annuel.
+  headers:
+    calendars: Nombre de calendriers
+    monthly: Abonnement mensuel
+    yearly: Abonnement annuel
+    yearly_discount: (-16,7%)
+  tiers:
+    - calendars: A partir de 1 calendrier
+      monthly: 4,90€ / mois
+      yearly: 49€ / an
+    - calendars: A partir de 3 calendriers
+      monthly: 4,40€ / mois
+      yearly: 44€ / an
+    - calendars: A partir de 10 calendriers
+      monthly: 3,90€ / mois
+      yearly: 39€ / an
+    - calendars: 30 calendriers et plus
+      monthly: 3,40€ / mois
+      yearly: 34€ / an
+  note: Les tarifs sont exprimés <b>par calendrier</b> en euros hors taxe. La TVA applicable sera ajoutée lors de la facturation.
+
+calculation_example:
+  title: Exemple de calcul
+  examples:
+    - calendars: "Pour 2 calendriers synchronisés :"
+      monthly_label: Avec un abonnement mensuel
+      monthly_price: 9,80€ / mois
+      monthly_detail_label: Détail mensuel
+      monthly_detail_value: (2 x 4,90€)
+      yearly_label: Avec un abonnement annuel
+      yearly_price: 98€ / an
+      yearly_detail_label: Détail annuel
+      yearly_detail_value: (2 x 49€)
+    - calendars: "Pour 5 calendriers synchronisés :"
+      monthly_label: Avec un abonnement mensuel
+      monthly_price: 22€ / mois
+      monthly_detail_label: Détail mensuel
+      monthly_detail_value: (5 x 4,40€)
+      yearly_label: Avec un abonnement annuel
+      yearly_price: 220€ / an
+      yearly_detail_label: Détail annuel
+      yearly_detail_value: (5 x 44€)
+
+trial:
+  title: Période d'essai gratuite
+  description: Testez Timescanner pendant 30 jours sans engagement, sans carte bancaire. Annulez à tout moment.
+  cta: Commencer l'essai gratuit
+
+faq:
+  title: Questions fréquentes
+  questions:
+    - q: Comment fonctionne la période d'essai ?
+      a: Vous pouvez tester Timescanner gratuitement pendant 30 jours. Aucune carte bancaire n'est requise pour commencer.
+    - q: Comment est calculé le prix de mon abonnement ?
+      a: Le prix est calculé par calendrier selon un système de paliers. Plus vous synchronisez de calendriers, plus le tarif unitaire baisse.
+    - q: Puis-je changer d'abonnement ?
+      a: Oui, vous pouvez passer d'un abonnement mensuel à un abonnement annuel à tout moment.
+    - q: Comment ajouter des calendriers ?
+      a: Vous pouvez ajouter ou supprimer des calendriers à tout moment. La facturation sera ajustée automatiquement en fonction du nombre de calendriers et de leur position dans la grille tarifaire. 

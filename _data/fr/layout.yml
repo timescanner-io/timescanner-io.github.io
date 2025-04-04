@@ -1,10 +1,12 @@
 nav:
   pricing: Tarifs
+  features: Fonctionnalités
   examples: Cas d'usage
   login: Connexion
+  open_menu: Ouvrir le menu principal
 
 footer:
   copyright: Tous droits réservés
-  legal: Mentions légales
-  terms: Conditions Générales d'Utilisation
-  privacy: Confidentialité 
+  legal_notice: Mentions légales
+  term_of_services: Conditions d'utilisation
+  privacy: Politique de confidentialité 

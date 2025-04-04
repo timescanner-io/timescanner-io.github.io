@@ -1,0 +1,12 @@
+nav:
+  pricing: Precios
+  features: Funcionalidades
+  examples: Casos de uso
+  login: Conexión
+  open_menu: Abrir menú principal
+
+footer:
+  copyright: Todos los derechos reservados
+  legal_notice: Aviso legal
+  term_of_services: Condiciones de uso
+  privacy: Política de privacidad 

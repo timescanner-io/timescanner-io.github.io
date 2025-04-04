@@ -1,0 +1,64 @@
+meta:
+  title: Legal Notice
+
+editor:
+  title: Site Publisher
+  content: |
+    The <b>Timescanner</b> site is published by the company <b>ABVENTURE</b>, SARL (Limited Liability Company) with a capital of €1,000, registered with the RCS (Trade and Companies Register) of Lyon under number 985 290 170, whose registered office is located at 2 Rue des Varennes, 69660 Collonges au Mont d'Or, France.
+    <br><br>
+    <b>Publication Director</b>: Adrien Blandin (Manager)
+    <br>
+    <b>Contact Email</b>: {{ site.contact_email }}
+
+hosting:
+  title: Hosting
+  content: |
+    The <b>Timescanner</b> site is hosted by <b>Amazon Web Services (AWS)</b>, whose servers are located in the <b>Paris region (eu-west-3)</b>.
+    <br><br>
+    AWS France<br>
+    31 Place des Corolles, 92400 Courbevoie, France<br>
+    Website: <a href="https://aws.amazon.com/fr/" class="text-primary-600 hover:text-primary-700">https://aws.amazon.com/fr/</a>
+
+intellectual_property:
+  title: Intellectual Property
+  content: |
+    All elements constituting the site (texts, images, logos, technologies used, architecture, etc.) are protected by current intellectual property laws and remain the exclusive property of <b>ABVENTURE</b> or its partners.
+    <br><br>
+    Any reproduction, modification, distribution, or exploitation, even partial, of these elements is strictly prohibited without prior authorization.
+
+third_party_services:
+  title: Third-Party Services
+  intro: "The <b>Timescanner</b> site uses the following services:"
+  services:
+    - name: Stripe
+      description: for secure payment management
+      url: https://stripe.com
+    - name: Auth0
+      description: for authentication and access management
+      url: https://auth0.com
+  outro: These services are subject to their own privacy policies and terms of use.
+
+data_protection:
+  title: Collection and Processing of Personal Data
+  content: |
+    As part of its operation, <b>Timescanner</b> may collect certain personal data from users (name, email address, login information, etc.).
+    <br><br>
+    The processing carried out complies with the <b>General Data Protection Regulation (GDPR)</b> and current French legislation.
+    <br><br>
+    The user has the right to access, rectify, oppose, and delete data concerning them. To exercise these rights, please contact us at <b>{{ site.contact_email }}</b>.
+
+liability:
+  title: Liability
+  content: |
+    <b>ABVENTURE</b> makes every effort to ensure the accessibility and security of the <b>Timescanner</b> site. However, we cannot be held responsible for interruptions, technical errors, or damages related to the use of the site.
+    <br><br>
+    The user is responsible for protecting their equipment and access credentials.
+
+jurisdiction:
+  title: Applicable Law and Competent Jurisdiction
+  content: |
+    This legal notice is governed by French law. In the event of a dispute, and failing amicable resolution, the competent courts will be those within the jurisdiction of the registered office of <b>ABVENTURE</b>. # Note: Specific reference to French law and jurisdiction might need adaptation for international users.
+
+last_update:
+  label: Last updated
+  date: "{{ site.time | date: '%d/%m/%Y' }}" # Note: Consider using a more internationally standard date format 

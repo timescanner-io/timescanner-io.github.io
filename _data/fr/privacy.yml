@@ -1,0 +1,120 @@
+meta:
+  title: Politique de Confidentialité
+
+introduction:
+  title: Introduction
+  content: |
+    La protection de vos données personnelles est une priorité pour <b>Timescanner</b>, édité par la société <b>ABVENTURE</b>. Cette politique vise à expliquer quelles données sont collectées, comment elles sont utilisées et quels sont vos droits concernant leur traitement.
+    <br><br>
+    En utilisant <b>Timescanner</b>, vous acceptez les pratiques décrites dans cette politique.
+
+data_collected:
+  title: Données collectées
+  intro: |
+    Dans le cadre de son fonctionnement, <b>Timescanner</b> collecte et traite uniquement les <b>données strictement nécessaires</b> à l'utilisation du service.
+  user_provided:
+    title: Données fournies par l'utilisateur
+    intro: "Lors de l'inscription et de l'utilisation du service, les données suivantes peuvent être collectées :"
+    items:
+      - "<b>Identité</b> : Nom, prénom, adresse e-mail"
+      - "<b>Informations de connexion</b> : Adresse e-mail, mot de passe (stocké sous forme sécurisée)"
+      - "<b>Abonnement et facturation</b> : Informations liées aux paiements (via Stripe)"
+      - <b>URL des calendriers synchronisés</b> (<b>les événements analysés ne sont jamais enregistrés</b>)
+  technical_analytical:
+    title: Données techniques et analytiques
+    items:
+      - "<b>Données de navigation</b> : Adresse IP, type de navigateur, pages visitées"
+      - "<b>Données d'usage</b> : Horodatage des connexions, interactions avec le service"
+      - "<b>Données de suivi d'erreur et de performance</b> : Via <b>Sentry</b>"
+      - "<b>Données analytiques</b> : Via <b>Google Analytics</b>"
+      - "<b>Données d'interaction utilisateur</b> : Traitement de requêtes via <b>OpenAI</b>"
+
+processing_purposes:
+  title: Finalités du traitement
+  intro: "Les données collectées sont utilisées pour les finalités suivantes :"
+  items:
+    - "<b>Fournir et améliorer le service</b> : Synchronisation des calendriers et analyse des temps de travail"
+    - "<b>Gérer les abonnements et paiements</b> : Traitement sécurisé via <b>Stripe</b>"
+    - "<b>Assurer la sécurité et la conformité</b> : Gestion des accès et authentification via <b>Auth0</b>"
+    - "<b>Détecter et corriger les erreurs</b> : Monitoring via <b>Sentry</b>"
+    - "<b>Analyser et optimiser l'expérience utilisateur</b> : Suivi statistique avec <b>Google Analytics</b>"
+    - "<b>Améliorer les interactions utilisateur</b> : Traitement de requêtes via <b>OpenAI</b>"
+
+third_party_sharing:
+  title: Partage des données avec des tiers
+  intro: "Vos données ne sont <b>jamais revendues</b>. Toutefois, elles peuvent être transmises aux services tiers suivants, qui respectent les normes de sécurité et de confidentialité en vigueur :"
+  table:
+    headers:
+      service: Service
+      usage: Utilisation
+      policy: Politique de confidentialité
+    rows:
+      - service: <b>Stripe</b>
+        usage: Gestion des paiements
+        policy_url: https://stripe.com/privacy
+        policy_text: stripe.com/privacy
+      - service: <b>Auth0</b>
+        usage: Authentification sécurisée
+        policy_url: https://auth0.com/privacy
+        policy_text: auth0.com/privacy
+      - service: <b>Sentry</b>
+        usage: Détection et suivi des erreurs
+        policy_url: https://sentry.io/privacy
+        policy_text: sentry.io/privacy
+      - service: <b>Google Analytics</b>
+        usage: Analyse du trafic web
+        policy_url: https://policies.google.com/privacy
+        policy_text: policies.google.com/privacy
+      - service: <b>OpenAI</b>
+        usage: Traitement des interactions utilisateur
+        policy_url: https://openai.com/privacy
+        policy_text: openai.com/privacy
+
+data_security:
+  title: Sécurité des données
+  content: |
+    <b>Timescanner</b> met en œuvre toutes les mesures techniques et organisationnelles nécessaires pour protéger vos données contre tout accès non autorisé, altération ou divulgation.
+    <br><br>
+    Les <b>événements analysés ne sont jamais enregistrés</b> : seule l'URL du calendrier est stockée pour permettre la synchronisation.
+
+data_retention:
+  title: Conservation des données
+  intro: "Les données sont conservées pour la durée strictement nécessaire aux finalités décrites ci-dessus :"
+  items:
+    - "<b>Données de compte</b> : Jusqu'à la suppression du compte par l'utilisateur"
+    - "<b>Données de paiement</b> : Conformément aux obligations légales (10 ans en France)"
+    - "<b>Logs et données techniques</b> : Durée variable selon le service tiers utilisé"
+  outro: À l'expiration de ces délais, les données sont supprimées ou anonymisées de manière irréversible.
+
+user_rights:
+  title: Droits des utilisateurs
+  intro: |
+    Conformément au <b>Règlement Général sur la Protection des Données (RGPD)</b> et aux lois françaises en vigueur, vous disposez des droits suivants :
+  items:
+    - "<b>Droit d'accès</b> : Consulter les données vous concernant"
+    - "<b>Droit de rectification</b> : Modifier ou mettre à jour vos données"
+    - "<b>Droit à l'effacement</b> : Supprimer vos données définitivement"
+    - "<b>Droit d'opposition</b> : Refuser certains traitements"
+    - "<b>Droit à la portabilité</b> : Récupérer vos données dans un format structuré"
+  outro: Vous pouvez exercer ces droits en nous contactant à l'adresse <b>{{ site.contact_email }}</b>.
+
+cookies:
+  title: Cookies et suivi
+  intro: "<b>Timescanner</b> utilise des cookies pour :"
+  items:
+    - Assurer le bon fonctionnement du service
+    - Analyser l'audience avec <b>Google Analytics</b>
+    - Améliorer l'expérience utilisateur
+  outro: Vous pouvez gérer vos préférences en matière de cookies via les paramètres de votre navigateur.
+
+policy_modification:
+  title: Modification de la politique de confidentialité
+  content: <b>ABVENTURE</b> se réserve le droit de modifier cette politique à tout moment. En cas de mise à jour significative, une notification sera envoyée aux utilisateurs.
+
+contact:
+  title: Contact
+  content: Pour toute question relative à cette politique ou pour exercer vos droits, vous pouvez nous contacter à l'adresse <b>{{ site.contact_email }}</b>.
+
+last_update:
+  label: Dernière mise à jour
+  date: "{{ site.time | date: '%d/%m/%Y' }}" 

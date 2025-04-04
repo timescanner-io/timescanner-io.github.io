@@ -1,0 +1,49 @@
+meta:
+  title: Cas d'usage
+
+intro:
+  title: A qui s'adresse Timescanner ?
+  description: |
+    Calculer ses temps de travail présente de nombreux avantages. Beaucoup d'entre nous en ont besoin, pour des raisons toutes différentes.
+    <br><br>
+    Découvrez quelques cas d'usage qui vous permettront de comprendre comment Timescanner peut vous aider.
+
+sections:
+  freelancers:
+    image_alt: Freelance travaillant sur ordinateur
+    title: Aux freelances qui veulent faciliter la préparation de leurs factures
+    description: |
+      Lorsque vous travaillez pour plusieurs clients en simultané, il peut s'avérer difficile et chronophage de savoir combien de temps vous avez travaillé pour chacun d'eux.
+      <br><br>
+      Timescanner vous permet de suivre le temps passé pour chaque client, et de générer vos factures en quelques clics.
+      <br><br>
+      Vous avez toujours un oeil sur l'aterrisage de temps, prévu à la fin du mois. Cela vous permet aussi de savoir si vous risquez de dépasser le budget de votre client.
+  agencies:
+    image_alt: Equipe d'agence en réunion
+    title: Aux agences qui veulent réussir leurs devis au forfait
+    description: |
+      Une prestation au forfait n'est ni plus, ni moins, qu'une prestation au temps passé. Sauf que vous devez estimer le temps que vous allez passer.
+      <br><br>
+      Si l'estimation est bonne, le projet peut être très rentable. Mais dans le cas contraire, vous risquez de perdre beaucoup d'argent.
+      <br><br>
+      Avoir des données fiables sur des projets passés similaires vous permettra de faire des estimations précises.
+  companies:
+    image_alt: Employés de bureau travaillant ensemble
+    title: Aux entreprises qui préparent des dossiers de Crédit d'Impôt
+    description: |
+      Que ce soit le Crédit d'Impôt Innovation (CII), le Crédit d'Impôt Recherche (CIR) ou le Crédit d'Impôt Jeux-Vidéo (CIJV), Timescanner vous permet de connaitre en quelques secondes, le temps passé sur chacun de vos projets.
+      <br><br>
+      Vous n'aurez plus besoin de demander à chacun de vos collaborateurs de faire le calcul à la main. Ils auront juste à utiliser leur calendrier.
+  anyone:
+    image_alt: Personne réfléchissant devant un tableau
+    title: A tous ceux qui veulent augmenter leur efficacité
+    description: |
+      Même si vous ne facturez pas votre travail au temps passé, il est important de savoir combien de temps vous consacrez à vos tâches.
+      <br><br>
+      Cela vous permettra de savoir si votre temps est mal réparti, ou si vous le gaspillez dans des tâches sans valeur ajoutée. 
+      <br><br>
+      Servez-vous en pour expliquer à votre manager, pourquoi vous devriez réduire votre temps de réunion.
+
+cta:
+  title: Prêt à découvrir comment Timescanner peut vous aider ?
+  button: Essayer gratuitement 

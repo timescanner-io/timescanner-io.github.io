@@ -2,179 +2,109 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Timescanner
+title: "{{ site.data[site.active_lang].privacy.meta.title }}"
 permalink: /privacy
 ---
+
+{% assign t = site.data[site.active_lang].privacy %}
 
 <div class="container mx-auto px-4 py-12">
     <div class="max-w-3xl mx-auto">
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            {{ site.data.i18n.footer.privacy[site.active_lang] }}
+            {{ t.meta.title }}
         </h1>
 
         <div class="prose prose-lg max-w-none">
-            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Introduction</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.introduction.title }}</h2>
+            <p>{{ t.introduction.content }}</p>
 
-            <p>
-                La protection de vos données personnelles est une priorité pour <strong>Timescanner</strong>, édité par la société <strong>ABVENTURE</strong>. Cette politique vise à expliquer quelles données sont collectées, comment elles sont utilisées et quels sont vos droits concernant leur traitement.
-                <br><br>
-                En utilisant <strong>Timescanner</strong>, vous acceptez les pratiques décrites dans cette politique.
-            </p>
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.data_collected.title }}</h2>
+            <p>{{ t.data_collected.intro }}</p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Données collectées</h2>
-
-            <p>
-                Dans le cadre de son fonctionnement, <strong>Timescanner</strong> collecte et traite uniquement les <strong>données strictement nécessaires</strong> à l'utilisation du service.
-            </p>
-
-            <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">2.1. Données fournies par l'utilisateur</h3>
-            
-            <p class="mb-4">Lors de l'inscription et de l'utilisation du service, les données suivantes peuvent être collectées :</p>
-            
+            <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">{{ t.data_collected.user_provided.title }}</h3>
+            <p class="mb-4">{{ t.data_collected.user_provided.intro }}</p>
             <ul class="list-disc pl-6">
-                <li><strong>Identité</strong> : Nom, prénom, adresse e-mail</li>
-                <li><strong>Informations de connexion</strong> : Adresse e-mail, mot de passe (stocké sous forme sécurisée)</li>
-                <li><strong>Abonnement et facturation</strong> : Informations liées aux paiements (via Stripe)</li>
-                <li><strong>URL des calendriers synchronisés</strong> (⚠️ <strong>les événements analysés ne sont jamais enregistrés</strong>)</li>
+                {% for item in t.data_collected.user_provided.items %}
+                    <li>{{ item }}</li>
+                {% endfor %}
             </ul>
 
-            <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">2.2. Données techniques et analytiques</h3>
-            
+            <h3 class="text-xl font-bold text-gray-900 mt-6 mb-3">{{ t.data_collected.technical_analytical.title }}</h3>
             <ul class="list-disc pl-6">
-                <li><strong>Données de navigation</strong> : Adresse IP, type de navigateur, pages visitées</li>
-                <li><strong>Données d'usage</strong> : Horodatage des connexions, interactions avec le service</li>
-                <li><strong>Données de suivi d'erreur et de performance</strong> : Via <strong>Sentry</strong></li>
-                <li><strong>Données analytiques</strong> : Via <strong>Google Analytics</strong></li>
-                <li><strong>Données d'interaction utilisateur</strong> : Traitement de requêtes via <strong>OpenAI</strong></li>
+                {% for item in t.data_collected.technical_analytical.items %}
+                    <li>{{ item }}</li>
+                {% endfor %}
             </ul>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Finalités du traitement</h2>
-            
-            <p class="mb-4">Les données collectées sont utilisées pour les finalités suivantes :</p>
-            
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.processing_purposes.title }}</h2>
+            <p class="mb-4">{{ t.processing_purposes.intro }}</p>
             <ul class="list-disc pl-6">
-                <li><strong>Fournir et améliorer le service</strong> : Synchronisation des calendriers et analyse des temps de travail</li>
-                <li><strong>Gérer les abonnements et paiements</strong> : Traitement sécurisé via <strong>Stripe</strong></li>
-                <li><strong>Assurer la sécurité et la conformité</strong> : Gestion des accès et authentification via <strong>Auth0</strong></li>
-                <li><strong>Détecter et corriger les erreurs</strong> : Monitoring via <strong>Sentry</strong></li>
-                <li><strong>Analyser et optimiser l'expérience utilisateur</strong> : Suivi statistique avec <strong>Google Analytics</strong></li>
-                <li><strong>Améliorer les interactions utilisateur</strong> : Traitement de requêtes via <strong>OpenAI</strong></li>
+                {% for item in t.processing_purposes.items %}
+                    <li>{{ item }}</li>
+                {% endfor %}
             </ul>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Partage des données avec des tiers</h2>
-            
-            <p>
-                Vos données ne sont <strong>jamais revendues</strong>. Toutefois, elles peuvent être transmises aux services tiers suivants, qui respectent les normes de sécurité et de confidentialité en vigueur :
-            </p>
-
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.third_party_sharing.title }}</h2>
+            <p>{{ t.third_party_sharing.intro }}</p>
             <div class="overflow-x-auto my-4">
                 <table class="min-w-full divide-y divide-gray-200">
                     <thead class="bg-gray-50">
                         <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Service</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Utilisation</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Politique de confidentialité</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{{ t.third_party_sharing.table.headers.service }}</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{{ t.third_party_sharing.table.headers.usage }}</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{{ t.third_party_sharing.table.headers.policy }}</th>
                         </tr>
                     </thead>
-                    
                     <tbody class="bg-white divide-y divide-gray-200">
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap"><strong>Stripe</strong></td>
-                            <td class="px-6 py-4">Gestion des paiements</td>
-                            <td class="px-6 py-4"><a href="https://stripe.com/privacy" class="text-blue-600 hover:text-blue-800">stripe.com/privacy</a></td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap"><strong>Auth0</strong></td>
-                            <td class="px-6 py-4">Authentification sécurisée</td>
-                            <td class="px-6 py-4"><a href="https://auth0.com/privacy" class="text-blue-600 hover:text-blue-800">auth0.com/privacy</a></td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap"><strong>Sentry</strong></td>
-                            <td class="px-6 py-4">Détection et suivi des erreurs</td>
-                            <td class="px-6 py-4"><a href="https://sentry.io/privacy" class="text-blue-600 hover:text-blue-800">sentry.io/privacy</a></td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap"><strong>Google Analytics</strong></td>
-                            <td class="px-6 py-4">Analyse du trafic web</td>
-                            <td class="px-6 py-4"><a href="https://policies.google.com/privacy" class="text-blue-600 hover:text-blue-800">policies.google.com/privacy</a></td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 whitespace-nowrap"><strong>OpenAI</strong></td>
-                            <td class="px-6 py-4">Traitement des interactions utilisateur</td>
-                            <td class="px-6 py-4"><a href="https://openai.com/privacy" class="text-blue-600 hover:text-blue-800">openai.com/privacy</a></td>
-                        </tr>
+                        {% for row in t.third_party_sharing.table.rows %}
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap">{{ row.service }}</td>
+                                <td class="px-6 py-4">{{ row.usage }}</td>
+                                <td class="px-6 py-4"><a href="{{ row.policy_url }}" class="text-blue-600 hover:text-blue-800">{{ row.policy_text }}</a></td>
+                            </tr>
+                        {% endfor %}
                     </tbody>
                 </table>
             </div>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Sécurité des données</h2>
-            
-            <p>
-                <strong>Timescanner</strong> met en œuvre toutes les mesures techniques et organisationnelles nécessaires pour protéger vos données contre tout accès non autorisé, altération ou divulgation.
-                <br><br>
-                Les <strong>événements analysés ne sont jamais enregistrés</strong> : seule l'URL du calendrier est stockée pour permettre la synchronisation.
-            </p>
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.data_security.title }}</h2>
+            <p>{{ t.data_security.content }}</p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Conservation des données</h2>
-            
-            <p class="mb-4">Les données sont conservées pour la durée strictement nécessaire aux finalités décrites ci-dessus :</p>
-            
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.data_retention.title }}</h2>
+            <p class="mb-4">{{ t.data_retention.intro }}</p>
             <ul class="list-disc pl-6 mb-4">
-                <li><strong>Données de compte</strong> : Jusqu'à la suppression du compte par l'utilisateur</li>
-                <li><strong>Données de paiement</strong> : Conformément aux obligations légales (10 ans en France)</li>
-                <li><strong>Logs et données techniques</strong> : Durée variable selon le service tiers utilisé</li>
+                {% for item in t.data_retention.items %}
+                    <li>{{ item }}</li>
+                {% endfor %}
             </ul>
-            
-            <p>
-                À l'expiration de ces délais, les données sont supprimées ou anonymisées de manière irréversible.
-            </p>
+            <p>{{ t.data_retention.outro }}</p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Droits des utilisateurs</h2>
-            
-            <p class="mb-4">
-                Conformément au <strong>Règlement Général sur la Protection des Données (RGPD)</strong> et aux lois françaises en vigueur, vous disposez des droits suivants :
-            </p>
-            
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.user_rights.title }}</h2>
+            <p class="mb-4">{{ t.user_rights.intro }}</p>
             <ul class="list-disc pl-6 mb-4">
-                <li><strong>Droit d'accès</strong> : Consulter les données vous concernant</li>
-                <li><strong>Droit de rectification</strong> : Modifier ou mettre à jour vos données</li>
-                <li><strong>Droit à l'effacement</strong> : Supprimer vos données définitivement</li>
-                <li><strong>Droit d'opposition</strong> : Refuser certains traitements</li>
-                <li><strong>Droit à la portabilité</strong> : Récupérer vos données dans un format structuré</li>
+                {% for item in t.user_rights.items %}
+                    <li>{{ item }}</li>
+                {% endfor %}
             </ul>
-            
-            <p>
-                Vous pouvez exercer ces droits en nous contactant à l'adresse <strong>{{ site.contact_email }}</strong>.
-            </p>
+            <p>{{ t.user_rights.outro | liquify }}</p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Cookies et suivi</h2>
-            
-            <p class="mb-4"><strong>Timescanner</strong> utilise des cookies pour :</p>
-            
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.cookies.title }}</h2>
+            <p class="mb-4">{{ t.cookies.intro }}</p>
             <ul class="list-disc pl-6 mb-4">
-                <li>Assurer le bon fonctionnement du service</li>
-                <li>Analyser l'audience avec <strong>Google Analytics</strong></li>
-                <li>Améliorer l'expérience utilisateur</li>
+                {% for item in t.cookies.items %}
+                    <li>{{ item }}</li>
+                {% endfor %}
             </ul>
-            
-            <p>
-                Vous pouvez gérer vos préférences en matière de cookies via les paramètres de votre navigateur.
-            </p>
+            <p>{{ t.cookies.outro }}</p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Modification de la politique de confidentialité</h2>
-           
-            <p>
-                <strong>ABVENTURE</strong> se réserve le droit de modifier cette politique à tout moment. En cas de mise à jour significative, une notification sera envoyée aux utilisateurs.
-            </p>
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.policy_modification.title }}</h2>
+            <p>{{ t.policy_modification.content }}</p>
 
-            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">10. Contact</h2>
-            
-            <p class="mb-4">
-                Pour toute question relative à cette politique ou pour exercer vos droits, vous pouvez nous contacter à l'adresse <strong>{{ site.contact_email }}</strong>.
-            </p>
+            <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">{{ t.contact.title }}</h2>
+            <p class="mb-4">{{ t.contact.content | liquify }}</p>
             
             <p>
-                <strong>Dernière mise à jour : {{ site.time | date: '%d/%m/%Y' }}</strong>
+                <b>{{ t.last_update.label }} : {{ t.last_update.date | liquify }}</b>
             </p>
         </div>
     </div>

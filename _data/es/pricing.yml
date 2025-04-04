@@ -1,0 +1,76 @@
+meta:
+  title: Precios
+
+intro:
+  title: Precios simples y transparentes, adaptados a tus necesidades
+  description: |
+    Los precios se mantienen bajos para no aumentar tus gastos. No estamos aquí para venderte una suscripción más que olvidarás.
+    <br><br>
+    Timescanner está aquí para ahorrarte tiempo y dinero, no al revés.
+
+pricing_table:
+  title: Precios progresivos, para ayudarte a ahorrar
+  description: |
+    Ya sea que tengas varios calendarios personales o quieras visibilidad sobre los tiempos de trabajo de todos tus colaboradores, Timescanner puede analizar y agregar eventos de múltiples calendarios.
+    <br><br>
+    El precio es POR calendario, que puedes añadir o eliminar en cualquier momento.
+    <br><br>
+    <b>Cuantos más calendarios tengas, menor será el precio unitario.</b> Para ahorrar aún más, elige la suscripción anual.
+  headers:
+    calendars: Número de calendarios
+    monthly: Suscripción mensual
+    yearly: Suscripción anual
+    yearly_discount: (-16,7%)
+  tiers:
+    - calendars: A partir de 1 calendario
+      monthly: 4,90 € / mes
+      yearly: 49 € / año
+    - calendars: A partir de 3 calendarios
+      monthly: 4,40 € / mes
+      yearly: 44 € / año
+    - calendars: A partir de 10 calendarios
+      monthly: 3,90 € / mes
+      yearly: 39 € / año
+    - calendars: 30 calendarios y más
+      monthly: 3,40 € / mes
+      yearly: 34 € / año
+  note: Los precios se expresan <b>por calendario</b> en euros sin IVA. El IVA aplicable se añadirá en la facturación.
+
+calculation_example:
+  title: Ejemplo de cálculo
+  examples:
+    - calendars: "Para 2 calendarios sincronizados:"
+      monthly_label: Con una suscripción mensual
+      monthly_price: 9,80 € / mes
+      monthly_detail_label: Detalle mensual
+      monthly_detail_value: (2 x 4,90 €)
+      yearly_label: Con una suscripción anual
+      yearly_price: 98 € / año
+      yearly_detail_label: Detalle anual
+      yearly_detail_value: (2 x 49 €)
+    - calendars: "Para 5 calendarios sincronizados:"
+      monthly_label: Con una suscripción mensual
+      monthly_price: 22 € / mes
+      monthly_detail_label: Detalle mensual
+      monthly_detail_value: (5 x 4,40 €)
+      yearly_label: Con una suscripción anual
+      yearly_price: 220 € / año
+      yearly_detail_label: Detalle anual
+      yearly_detail_value: (5 x 44 €)
+
+trial:
+  title: Período de prueba gratuito
+  description: Prueba Timescanner durante 30 días sin compromiso, sin necesidad de tarjeta de crédito. Cancela en cualquier momento.
+  cta: Comenzar prueba gratuita
+
+faq:
+  title: Preguntas frecuentes
+  questions:
+    - q: ¿Cómo funciona el período de prueba?
+      a: Puedes probar Timescanner gratis durante 30 días. No se requiere tarjeta de crédito para comenzar.
+    - q: ¿Cómo se calcula el precio de mi suscripción?
+      a: El precio se calcula por calendario según un sistema de niveles. Cuantos más calendarios sincronices, menor será la tarifa unitaria.
+    - q: ¿Puedo cambiar de suscripción?
+      a: Sí, puedes cambiar de una suscripción mensual a una anual en cualquier momento.
+    - q: ¿Cómo añadir calendarios?
+      a: Puedes añadir o eliminar calendarios en cualquier momento. La facturación se ajustará automáticamente según el número de calendarios y su posición en la tabla de precios. 

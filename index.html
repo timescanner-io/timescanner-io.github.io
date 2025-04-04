@@ -2,9 +2,11 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title:
+title: "{{ site.data[site.active_lang].home.meta.title }}"
 permalink: /
 ---
+
+{% assign t = site.data[site.active_lang].home %}
 
 <!-- Hero Section -->
 <section class="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
@@ -12,22 +14,22 @@ permalink: /
     
     <!-- Image de fond -->
     <div class="absolute inset-0 opacity-10">
-        <img src="/assets/images/hero.jpg" alt="" class="absolute right-0 top-1/2 -translate-y-1/2 h-[80vh] object-contain">
+        <img src="/assets/images/hero.jpg" alt="{{ t.hero.image_alt }}" class="absolute right-0 top-1/2 -translate-y-1/2 h-[80vh] object-contain">
     </div>
     
     <div class="container mx-auto px-4 py-20 md:py-32 relative">
         <div class="max-w-2xl">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                {{ site.data[site.active_lang].home.hero.title }} <span class="text-primary-200">{{ site.data[site.active_lang].home.hero.title_highlight }}</span>
+            <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                {{ t.hero.title }} <span class="text-primary-200">{{ t.hero.title_highlight }}</span>
             </h1>
             
-            <p class="text-xl md:text-2xl mb-8 text-primary-100">
-                {{ site.data[site.active_lang].home.hero.subtitle }}
+            <p id="hero-subtitle" class="text-xl md:text-2xl mb-8 text-primary-100">
+                {{ t.hero.subtitle }}
             </p>
             
             <div class="flex">
-                <a href="{{ site.webapp_url }}" class="inline-flex items-center px-8 py-4 rounded-lg bg-white text-primary-600 font-semibold hover:bg-primary-50 transition-colors duration-200">
-                    {{ site.data[site.active_lang].home.hero.cta }}
+                <a href="{{ site.webapp_url }}" id="hero-cta" class="inline-flex items-center px-8 py-4 rounded-lg bg-white text-primary-600 font-semibold hover:bg-primary-50 transition-colors duration-200">
+                    {{ t.hero.cta }}
                 </a>
             </div>
         </div>
@@ -38,11 +40,11 @@ permalink: /
 <section class="w-full bg-white">
     <div class="container mx-auto px-4 py-20 max-w-3xl text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            {{ site.data[site.active_lang].home.method.title }}
+            {{ t.method.title }}
         </h2>
         
         <p class="text-xl text-gray-600 leading-relaxed mb-12">
-            {{ site.data[site.active_lang].home.method.description }}
+            {{ t.method.description }}
         </p>
 
         <div class="relative max-w-2xl mx-auto mb-12">
@@ -53,19 +55,19 @@ permalink: /
                     <div class="w-2 h-full bg-primary-500 rounded-full mr-4 mt-1"></div>
                     <div class="flex-1 text-left">
                         <code class="text-gray-800 font-mono text-lg block mb-1">
-                            <span class="text-primary-600">[</span>{{ site.data[site.active_lang].home.event.client_name }}<span class="text-primary-600">]</span>
-                            <span class="text-gray-600">(</span><span class="text-primary-600">[</span>{{ site.data[site.active_lang].home.event.project_name }}<span class="text-primary-600">]</span><span class="text-gray-600">)</span>
-                            <span class="text-gray-600">{{ site.data[site.active_lang].home.event.event_title }}</span>
+                            <span class="text-primary-600">[</span>{{ t.event.client_name }}<span class="text-primary-600">]</span>
+                            <span class="text-gray-600">(</span><span class="text-primary-600">[</span>{{ t.event.project_name }}<span class="text-primary-600">]</span><span class="text-gray-600">)</span>
+                            <span class="text-gray-600">{{ t.event.event_title }}</span>
                         </code>
 
-                        <div class="text-sm text-gray-500">{{ site.data[site.active_lang].home.event.event_time }}</div>
+                        <div class="text-sm text-gray-500">{{ t.event.event_time }}</div>
                     </div>
                 </div>
             </div>
         </div>
 
         <p class="text-gray-600 leading-relaxed text-2xl font-bold">
-            {{ site.data[site.active_lang].home.method.conclusion }}
+            {{ t.method.conclusion }}
         </p>
     </div>
 </section>
@@ -74,11 +76,11 @@ permalink: /
 <section class="w-full bg-gray-50">
     <div class="container mx-auto px-4 py-20 max-w-3xl text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            {{ site.data[site.active_lang].home.examples.title }}
+            {{ t.examples.title }}
         </h2>
 
         <p class="text-xl text-gray-600 leading-relaxed mb-12">
-            {{ site.data[site.active_lang].home.examples.description }}
+            {{ t.examples.description }}
         </p>
 
         <div class="relative max-w-4xl mx-auto">
@@ -93,7 +95,7 @@ permalink: /
                     </div>
                 </div>
                 <!-- Contenu -->
-                <img src="/assets/images/calendar.png" alt="Interface de Timescanner" class="w-full">
+                <img src="/assets/images/calendar.jpg" alt="{{ t.examples.image_alt }}" class="w-full">
             </div>
         </div>
     </div>
@@ -105,16 +107,16 @@ permalink: /
         <!-- Suivre votre temps -->
         <div class="flex flex-col-reverse md:flex-row items-center gap-12">
             <div class="w-full md:w-1/2">
-                <img src="/assets/images/chronometer.jpg" alt="Suivre votre temps" class="rounded-lg shadow-lg">
+                <img src="/assets/images/chronometer.jpg" alt="{{ t.time_tracking.image_alt }}" class="rounded-lg shadow-lg">
             </div>
             
             <div class="w-full md:w-1/2">
                 <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                    {{ site.data[site.active_lang].home.time_tracking.title }}
+                    {{ t.time_tracking.title }}
                 </h3>
                 
                 <p class="text-gray-600 leading-relaxed text-lg">
-                    {{ site.data[site.active_lang].home.time_tracking.description }}
+                    {{ t.time_tracking.description }}
                 </p>
             </div>
         </div>
@@ -123,32 +125,32 @@ permalink: /
         <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="w-full md:w-1/2">
                 <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                    {{ site.data[site.active_lang].home.rentability.title }}
+                    {{ t.rentability.title }}
                 </h3>
             
                 <p class="text-gray-600 leading-relaxed text-lg">
-                    {{ site.data[site.active_lang].home.rentability.description }}
+                    {{ t.rentability.description }}
                 </p>
             </div>
             
             <div class="w-full md:w-1/2">
-                <img src="/assets/images/revenue.jpg" alt="Maximisez votre rentabilité" class="rounded-lg shadow-lg">
+                <img src="/assets/images/revenue.jpg" alt="{{ t.rentability.image_alt }}" class="rounded-lg shadow-lg">
             </div>
         </div>
 
         <!-- Méthode éprouvée -->
         <div class="flex flex-col-reverse md:flex-row items-center gap-12">
             <div class="w-full md:w-1/2">
-                <img src="/assets/images/ceo.jpg" alt="Méthode éprouvée" class="rounded-lg shadow-lg">
+                <img src="/assets/images/ceo.jpg" alt="{{ t.efficiency.image_alt }}" class="rounded-lg shadow-lg">
             </div>
             
             <div class="w-full md:w-1/2">
                 <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                    {{ site.data[site.active_lang].home.efficiency.title }}
+                    {{ t.efficiency.title }}
                 </h3>
                 
                 <p class="text-gray-600 leading-relaxed text-lg">
-                    {{ site.data[site.active_lang].home.efficiency.description }}
+                    {{ t.efficiency.description }}
                 </p>
             </div>
         </div>
@@ -165,11 +167,11 @@ permalink: /
                 </div>
                 
                 <h4 class="text-xl font-semibold mb-4">
-                    {{ site.data[site.active_lang].home.features.billing.title }}
+                    {{ t.features.billing.title }}
                 </h4>
                 
                 <p class="text-gray-600">
-                    {{ site.data[site.active_lang].home.features.billing.description }}
+                    {{ t.features.billing.description }}
                 </p>
             </div>
 
@@ -179,11 +181,11 @@ permalink: /
                 </div>
                 
                 <h4 class="text-xl font-semibold mb-4">
-                    {{ site.data[site.active_lang].home.features.revenue.title }}
+                    {{ t.features.revenue.title }}
                 </h4>
                 
                 <p class="text-gray-600">
-                    {{ site.data[site.active_lang].home.features.revenue.description }}
+                    {{ t.features.revenue.description }}
                 </p>
             </div>
 
@@ -193,11 +195,11 @@ permalink: /
                 </div>
                 
                 <h4 class="text-xl font-semibold mb-4">
-                    {{ site.data[site.active_lang].home.features.reporting.title }}
+                    {{ t.features.reporting.title }}
                 </h4>
                 
                 <p class="text-gray-600">
-                    {{ site.data[site.active_lang].home.features.reporting.description }}
+                    {{ t.features.reporting.description }}
                 </p>
             </div>
         </div>
@@ -208,15 +210,15 @@ permalink: /
 <section class="w-full bg-white">
     <div class="container mx-auto px-4 py-20 max-w-3xl text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            {{ site.data[site.active_lang].home.database.title }}
+            {{ t.database.title }}
         </h2>
         
         <p class="text-xl text-gray-600 leading-relaxed mb-12">
-            {{ site.data[site.active_lang].home.database.description }}
+            {{ t.database.description }}
         </p>
 
         <p class="text-2xl text-gray-600 font-bold leading-relaxed">
-            {{ site.data[site.active_lang].home.database.conclusion }}
+            {{ t.database.conclusion }}
         </p>
     </div>
 </section>
@@ -227,12 +229,12 @@ permalink: /
     
     <div class="container mx-auto px-4 py-20 relative text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">
-            {{ site.data[site.active_lang].home.cta.title }}
+            {{ t.cta.title }}
         </h2>
         
         <div class="flex justify-center">
             <a href="{{ site.webapp_url }}" class="inline-flex items-center px-8 py-4 rounded-lg bg-white text-primary-600 font-semibold hover:bg-primary-50 transition-colors duration-200">
-                {{ site.data[site.active_lang].home.cta.button }}
+                {{ t.cta.button }}
             </a>
         </div>
     </div>

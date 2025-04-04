@@ -1,18 +1,19 @@
-title: Timescanner
+meta:
+  title: Accueil
 
 hero:
   title: Le calcul des temps de travail
   title_highlight: simple & intelligent
   subtitle: Le seul Time Tracker qui ne vous rajoute pas de charge mentale. Le seul SaaS pensé pour ne pas être utilisé.
   cta: Je m'inscris
+  image_alt: Illustration abstraite d'un calendrier et de graphiques
 
 method:
   title: Une méthode radicalement différente
-  description: "
+  description: |
     Les outils classiques de Time Tracking vous imposent tous de démarrer et d'arrêter un chrono. Fastidieux, non ?
     <br><br>
     Avec Timescanner, aucun nouvel outil, aucune nouvelle habitude. Il suffit de nommer les événements de votre agenda avec le format suivant, pour que vos temps de travail soient calculés automatiquement.
-  "
   conclusion: Timescanner n'est pas un simple Time Tracker. C'est une méthode d'organisation pensée pour vous rendre plus efficace.
 
 event:
@@ -23,17 +24,17 @@ event:
 
 rentability:
   title: Augmentez le Chiffre d'Affaires de votre activité
-  description: "
+  description: |
     Estimer le temps nécessaire pourune mission au forfait, c'est jouer directement avec votre rentabilité. Si vous faites une erreur sur le devis, c'est votre marge qui disparait.
     <br><br>
     Timescanner vous permet d'analyser vos missions similaire passées, pour vous donner une estimation fiable du temps nécessaire.
     <br><br>
     <b>Pour augmenter votre rentabilité, ne faites plus de suppositions. Basez-vous sur des données concrètes.</b>
-  "
+  image_alt: Graphique de croissance symbolisant l'augmentation de la rentabilité
 
 examples:
   title: Exemple d'agenda géré avec Timescanner
-  description: "
+  description: |
     Des noms d'événements normalisés pour le calcul automatique du temps de travail.
     Un code couleur par client pour une visibilité immédiate.
     Des tags pour distinguer ce qui est facturé ou offert.
@@ -42,57 +43,57 @@ examples:
     Et comme tout se fait dans votre agenda habituel, vous profitez de toutes ses fonctionnalités : recherche rapide, renommage en masse, organisation flexible.
     <br><br>
     Votre agenda ne sert plus seulement à planifier, il devient un véritable outil de suivi du temps.
-  "
+  image_alt: Exemple d'un calendrier Google géré avec Timescanner
 
 time_tracking:
   title: Ne perdez plus votre temps à le suivre
-  description: "
-    En tant que freelance, <strong>chaque minute non consacrée à un client est une perte financière</strong>, car vous ne la facturez pas.
+  description: |
+    En tant que freelance, <b>chaque minute non consacrée à un client est une perte financière</b>, car vous ne la facturez pas.
     <br><br>
-    Pourtant, les outils de Time Tracking traditionnels vous imposent de jongler avec un chrono et de ressaisir toutes les informations manuellement. Alors que vous les avez déjà enregistrées dans votre calendrier.
+    Pourtant, les outils de Time Tracking traditionnels vous imposent de jongler avec un chrono et de ressaisir toutes les informations manuellement.  Alors que vous les avez déjà enregistrées dans votre calendrier.
     <br><br>
-    <strong>Résultat ? Vous perdez du temps... pour le suivre.</strong>
-  "
+    <b>Résultat ? Vous perdez du temps... pour le suivre.</b>
+  image_alt: Chronometre symbolisant la perte de temps liée au suivi manuel
 
 efficiency:
   title: Devenez plus efficace et performant
-  description: "
-    Les CEOs les plus productifs utilisent déjà cette approche : <strong>tout passe par leur calendrier</strong>. Ils sont organisés au quart d'heure près pour gérer leurs business.
+  description: |
+    Les CEOs les plus productifs utilisent déjà cette approche : <b>tout passe par leur calendrier</b>. Ils sont organisés au quart d'heure près pour gérer leurs business.
     <br><br>
     <i>La seule différence entre eux et vous ? Ils ont un(e) assistant(e) pour gérer leur calendrier à leur place.</i>
     <br><br>
-    En adoptant le <strong>réflexe calendrier</strong>, vous structurez votre temps, évitez les oublis et simplifiez votre gestion.
-  "
+    En adoptant le <b>réflexe calendrier</b>, vous structurez votre temps, évitez les oublis et simplifiez votre gestion.
+  image_alt: Personne organisée travaillant efficacement sur ordinateur
 
 features:
   billing:
     title: Préparez vos factures rapidement
-    description: "
+    description: |
       Renseignez le Taux Horaire de chacun de vos clients pour calculer automatiquement le montant des factures à lui envoyer.
       <br><br>
-      <strong>Transformez du temps perdu en temps facturable et gagnez plus d'argent.</strong>
-    "
+      <b>Transformez du temps perdu en temps facturable et gagnez plus d'argent.</b>
   revenue:
     title: Estimez votre Chiffre d'Affaires en fin de mois
-    description: "
+    description: |
       Organiser votre calendrier avec des évènements récurrents pour vos clients, permet de prévoir dès le début du mois, votre CA en fin de mois. 
       <br><br>
-      <strong>À vous de décider si vous devez travailler ou vous reposer.</strong>
-    "
+      <b>À vous de décider si vous devez travailler ou vous reposer.</b>
   reporting:
     title: Générez facilement vos Compte-Rendus d'Activité
-    description: "
+    description: |
       Les évènements de votre agenda fournissent suffisament d'informations sur votre activité pour générer à votre place, un Compte-Rendu mensuel à envoyer à vos clients.
       <br><br>
-      <strong>Ne perdez plus de temps à faire du reporting.</strong>
-    "
+      <b>Ne perdez plus de temps à faire du reporting.</b>
 
 database:
   title: Calendars As A Database
-  description: "
+  description: |
     Timescanner calcule les temps de travail en temps réel, directement depuis votre calendrier. Nous n'enregistrons rien en base de données. Désactiver votre calendrier ou changer la durée d'un évènement aura donc un impact immédiat. 
-  "
-  conclusion: Votre calendrier EST la base de données. Vos évènements restent confidentiels.
+    
+    <br><br>
+
+    Votre calendrier <b>EST</b> la base de données. <b>Vos évènements restent confidentiels.</b>
+  conclusion: Vos données restent sur votre calendrier. Nous n'y avons pas accès.
 
 cta:
   title: Prêt à gagner du temps sur votre Time Tracking ?

@@ -1,10 +1,12 @@
 nav:
   pricing: Pricing
-  examples: Examples
+  features: Features
+  examples: Use Cases
   login: Login
+  open_menu: Open main menu
 
 footer:
   copyright: All rights reserved
-  legal: Legal Notice
-  terms: Terms of Service
+  legal_notice: Legal Notice
+  term_of_services: Terms of Service
   privacy: Privacy Policy 
